@@ -1,0 +1,21 @@
+@import "ember-bootstrap/bootstrap";
+
+body {
+    background-color: #88BDBC;
+}
+
+.navbar {
+    background:#254E58 !important;
+  
+    a {
+      color: #ffff !important;
+    //   font-family: 'Roboto Condensed', sans-serif;
+    //   font-size: 25px;
+    //   letter-spacing: 0;
+    }
+  }
+
+.image {
+  width: auto;
+  height: auto;
+}

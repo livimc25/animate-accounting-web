@@ -1,0 +1,15 @@
+<BsNavbar @class="navbar" as |navbar|>
+  <a class="navbar-brand" href="#">Brand</a>
+  <navbar.content>
+    <navbar.nav as |nav|>
+      <nav.item>
+        <nav.linkTo @route="index">Getting Started</nav.linkTo>
+      </nav.item>
+      <nav.item>
+        <nav.linkTo @route="index">Accounting Labs</nav.linkTo>
+      </nav.item>
+    </navbar.nav>
+  </navbar.content>
+</BsNavbar>
+
+{{yield}}
