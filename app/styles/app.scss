@@ -1,4 +1,5 @@
 @import "ember-bootstrap/bootstrap";
+@import "font-awesome";
 
 body {
     background-color: #88BDBC;
@@ -15,7 +16,20 @@ body {
     }
   }
 
-.image {
-  width: auto;
-  height: auto;
+.home-icon {
+  color: #ffff !important;
+}
+
+.banner-gettiing-started {
+  right: 300px;
+  top: 22px;
+  position: absolute;
+  text-decoration: none;
+}
+
+.banner-accounting-labs {
+  right: 150px;
+  top: 22px;
+  position: absolute;
+  text-decoration: none;
 }

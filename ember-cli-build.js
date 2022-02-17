@@ -7,6 +7,10 @@ module.exports = function(defaults) {
     'ember-bootstrap': {
       bootstrapVersion: 5,
       importBootstrapCSS: false
+    },
+    'ember-font-awesome': {
+      useScss: true, // for ember-cli-sass
+      useLess: false  // for ember-cli-less
     }
   });
 
