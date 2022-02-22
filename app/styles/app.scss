@@ -1,0 +1,57 @@
+@import "ember-bootstrap/bootstrap";
+@import "font-awesome";
+
+body {
+    background-color: #88BDBC;
+}
+
+.navbar {
+    background:#254E58 !important;
+  
+    a {
+      color: #ffff !important;
+    }
+  }
+
+.home-icon {
+  color: #ffff !important;
+}
+
+.banner-gettiing-started {
+  right: 300px;
+  top: 22px;
+  position: absolute;
+  text-decoration: none;
+}
+
+.banner-accounting-labs {
+  right: 150px;
+  top: 22px;
+  position: absolute;
+  text-decoration: none;
+}
+
+.welcome-message{
+  font-weight: 400;
+  position: absolute;
+  left: 300px;
+  top: 150px;
+}
+
+.btn {
+  color: #fff;
+  background-color: #4F4A41;
+  border-color: #302e2c;
+}
+
+.what-btn-location {
+  position: absolute;
+  top: 300px;
+  left: 500px;
+}
+
+.why-btn-location {
+  position: absolute;
+  top: 450px;
+  left: 700px;
+}
