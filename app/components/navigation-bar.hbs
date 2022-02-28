@@ -1,12 +1,14 @@
 <BsNavbar @class="navbar" as |navbar|>
-  {{fa-icon "home" size="3" class="home-icon"}}
+  <LinkTo @route="index">
+    {{fa-icon "home" size="3" class="home-icon"}}
+  </LinkTo>
   <navbar.content>
     <navbar.nav as |nav|>
-      <nav.item>
+      {{!-- <nav.item>
         <nav.linkTo @route="index" @class="banner-gettiing-started">Getting Started</nav.linkTo>
-      </nav.item>
+      </nav.item> --}}
       <nav.item>
-        <nav.linkTo @route="index" @class="banner-accounting-labs">Accounting Labs</nav.linkTo>
+        <nav.linkTo @route="accounting-labs.index" @class="banner-accounting-labs">Accounting Labs</nav.linkTo>
       </nav.item>
     </navbar.nav>
   </navbar.content>

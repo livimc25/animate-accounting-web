@@ -1,0 +1,14 @@
+<NavigationBar/>
+<h1 class="welcome-message">Welcome to Accounting Animated!</h1>
+<div class="what-btn-location">
+    <LinkTo @route="getting-started.what-is-accounting">
+        <BsButton @size="lg">What is Accounting?</BsButton>
+    </LinkTo>
+</div>
+<div class="why-btn-location">
+    <LinkTo @route="getting-started.why-learn-accounting">
+        <BsButton @size="lg">Why should I learn accounting?</BsButton>
+    </LinkTo>
+</div>
+<IndexFooter/>
+{{outlet}}
