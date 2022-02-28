@@ -1,7 +1,12 @@
 {
   "hosting": {
-    "firebase": "animate-accounting-web",
-    "public": "dist",
+    "firebase": "animate-accounting",
+    "public": "./dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
     "rewrites": [{
       "source": "**",
       "destination": "/index.html"
