@@ -10,7 +10,9 @@ Router.map(function() {
   this.route('what-is-accounting');
   this.route('why-learn-accounting');
   this.route('accounting-labs', function() {
-    this.route('accounting-equation');
+    this.route('accounting-equation', function() {
+      this.route('practice');
+    });
     this.route('revenue-recognition-and-matching');
     this.route('income-statement');
     this.route('balance-sheet');
