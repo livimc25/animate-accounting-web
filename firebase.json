@@ -1,10 +1,10 @@
 {
   "hosting": {
-    "public": "app",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
+    "firebase": "animate-accounting-web",
+    "public": "dist",
+    "rewrites": [{
+      "source": "**",
+      "destination": "/index.html"
+    }]
   }
 }
