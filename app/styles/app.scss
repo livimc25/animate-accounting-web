@@ -55,8 +55,8 @@ body {
 .welcome-message {
   font-weight: 400;
   position: absolute;
-  left: 300px;
-  top: 150px;
+  left: 28%;
+  top: 23%;
 }
 
 .btn {
@@ -68,30 +68,30 @@ body {
 
 .what-btn-location {
   position: absolute;
-  top: 300px;
-  left: 500px;
+  top: 40%;
+  left: 40%;
 }
 
 .why-btn-location {
   position: absolute;
-  top: 450px;
-  left: 700px;
+  top: 60%;
+  left: 37%;
 }
 
 .descriptive-headers {
   color: #ffff;
   font-weight: 300;
   position: absolute;
-  left: 590px;
-  top: 175px;
+  left: 40%;
+  top: 20%;
 }
 
 .embedded-video {
   width: 420px;
   height: 315px;
   position: absolute;
-  left: 550px;
-  top: 300px;
+  left: 37%;
+  top: 40%;
 }
 
 .box{
@@ -162,32 +162,32 @@ body {
 
 .accounting-equation-button {
   position: absolute;
-  left: 400px;
-  top: 400px;
+  left: 25%;
+  top: 55%;
 }
 
 .revenue-recognition-button {
   position: absolute;
-  left: 825px;
-  top: 250px;
+  left: 55%;
+  top: 35%;
 }
 
 .income-statement-button {
   position: absolute;
-  left: 505px;
-  top: 250px;
+  left: 34%;
+  top: 35%;
 }
 
 .balance-sheet-button {
   position: absolute;
-  left: 225px;
-  top: 250px;
+  left: 15%;
+  top: 35%;
 }
 
 .stockholders-button {
   position: absolute;
-  left: 750px;
-  top: 400px;
+  left: 48%;
+  top: 55%;
 }
 
 .btn-light {
@@ -200,16 +200,16 @@ body {
 .accounting-labs-header {
   font-weight: 400;
   position: absolute;
-  left: 600px;
-  top: 135px;
+  left: 40%;
+  top: 20%;
 }
 
 .accounting-equation-title {
   color: #ffff;
   font-weight: 400;
   position: absolute;
-  left: 175px;
-  top: 150px;
+  left: 15%;
+  top: 18%;
 }
 
 .total-assets {
@@ -245,4 +245,92 @@ body {
   left: 400px;
   top: 300px;
   color: #ffff;
+}
+
+//drag-drop
+
+.dropTarget {
+  width: 300px;
+  height: 100px;
+  background-color: #a9a9a9;
+  color: #fff;
+  line-height: 100px;
+  font-size: 16px;
+  padding: 1em;
+}
+
+#bin .object-bin-title, .dropTarget {
+  text-align: center;
+}
+
+.sort-new-object {
+  width: 300px;
+  height: 80px;
+  background-color: #302e2c;
+  line-height: 50px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 1em;
+  color: #fff;
+}
+
+.income-statement-sort-objects {
+  margin-left: 40%;
+  margin-top: 5%;
+  border:#254E58;
+}
+
+.income-statement-title {
+  color: #ffff;
+  font-weight: 400;
+  position: absolute;
+  left: 15%;
+  top: 15%;
+}
+
+.income-statement-paragraph {
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: white;
+}
+
+.income-statement-paragraph-2 {
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: white;
+}
+
+//test
+
+.sortObject {
+  margin: 1em;
+  width: 150px;
+  height: 80px;
+  background-color: #88BDBC;
+  line-height: 20px;
+  text-align: center;
+  font-size: 16px;
+  padding: 1em;
+  color: #254E58;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700 ;
+}
+.accounting-equation-horizontal-list {
+  float: left;
+}
+.accounting-equation-block {
+  display: inline-block;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+.accounting-equation-game {
+  margin-right: 0%;
+  margin-left: 2%;
+  margin-top: 5%;
 }
