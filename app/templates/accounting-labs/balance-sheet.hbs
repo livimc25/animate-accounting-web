@@ -1,1 +1,35 @@
-{{outlet}}
+<NavigationBar/>
+<h1 class="income-statement-title">The Balance Sheet</h1>
+<div class="income-statement-paragraph">
+  <p>TODO
+  </p>
+</div>
+<div class="income-statement-paragraph-2">
+  <p>
+    To complete the Balance Sheet lab, arrange the following Balance Sheet items as they would normally appear 
+    on a completed Balance Sheet. You will see a success message when they are in the correct order.
+  </p>
+</div>
+<div class="income-statement-sort-objects">
+  <SortableObjects 
+    @sortableObjectList={{this.model.pages}} 
+    @sortEndAction={{fn this.sortEndAction}} 
+    @enableSort={{true}}
+  >
+    {{#each this.model.pages as |item|}}
+      <DraggableObject @content={{item}} @overrideClass={{'sort-new-object'}} @isSortable={{true}}>
+        {{item.title}}
+      </DraggableObject>
+    {{/each}}
+  </SortableObjects>
+</div>
+<br><br>
+{{#if this.sortFinishText}}
+  <SweetAlert
+    @show={{this.controller.sortFinishText}}
+    @title="Great job!"
+    @text="You have successfully completed a Balance Sheet"
+    @icon="success"
+    @willClose={{this.controller.reset}}
+  />
+{{/if}}
