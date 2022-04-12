@@ -7,8 +7,8 @@
   "license": "MIT",
   "author": "",
   "main": "./dist/index.js",
-  "files": [ 
-    "dist/index.js" 
+  "files": [
+    "dist/index.js"
   ],
   "directories": {
     "doc": "doc",
