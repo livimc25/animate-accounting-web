@@ -6,8 +6,8 @@ import { tracked } from '@glimmer/tracking';
 export default class AccountingLabsAccountingEquationIndexController extends Controller {
   @tracked useSwap = true;
   sortableObjectList = A(
-    [{id: 4, title:'Bonds Payable $120'},
-      {id: 5, title:'Notes Payable $50'},
+    [{id: 5, title:'Bonds Payable $120'},
+      {id: 4, title:'Notes Payable $50'},
       {id: 6, title:'+'},
       {id: 7, title:'Common Stock $90'},
       {id: 2, title:'Copyright $250'},

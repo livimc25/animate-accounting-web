@@ -7,13 +7,17 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
+  // nrgRoutes(this);
+
   this.route('what-is-accounting');
   this.route('why-learn-accounting');
   this.route('accounting-labs', function() {
     this.route('accounting-equation', function() {
       this.route('practice');
     });
-    this.route('revenue-recognition-and-matching');
+    this.route('revenue-recognition-and-matching', function() {
+      this.route('scenario');
+    });
     this.route('income-statement');
     this.route('balance-sheet');
     this.route('stockholders-equity');
