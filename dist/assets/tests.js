@@ -204,6 +204,44 @@ define("animate-accounting-web/tests/integration/components/index-footer-test", 
     });
   });
 });
+define("animate-accounting-web/tests/integration/components/scenario-incorrect-button/component-test", ["qunit", "ember-qunit", "@ember/test-helpers"], function (_qunit, _emberQunit, _testHelpers) {
+  "use strict";
+
+  0; //eaimeta@70e063a35619d71f0,"qunit",0,"ember-qunit",0,"@ember/test-helpers"eaimeta@70e063a35619d71f
+
+  (0, _qunit.module)('Integration | Component | scenario-incorrect-button', function (hooks) {
+    (0, _emberQunit.setupRenderingTest)(hooks);
+    (0, _qunit.test)('it renders', async function (assert) {
+      // Set any properties with this.set('myProperty', 'value');
+      // Handle any actions with this.set('myAction', function(val) { ... });
+      await (0, _testHelpers.render)(Ember.HTMLBars.template(
+      /*
+        <ScenarioIncorrectButton />
+      */
+      {
+        "id": "+JNA9LhW",
+        "block": "{\"symbols\":[],\"statements\":[[8,\"scenario-incorrect-button\",[],[[],[]],null]],\"hasEval\":false,\"upvars\":[]}",
+        "meta": {}
+      }));
+      assert.equal(this.element.textContent.trim(), ''); // Template block usage:
+
+      await (0, _testHelpers.render)(Ember.HTMLBars.template(
+      /*
+        
+            <ScenarioIncorrectButton>
+              template block text
+            </ScenarioIncorrectButton>
+          
+      */
+      {
+        "id": "uyZPpKM4",
+        "block": "{\"symbols\":[],\"statements\":[[2,\"\\n      \"],[8,\"scenario-incorrect-button\",[],[[],[]],[[\"default\"],[{\"statements\":[[2,\"\\n        template block text\\n      \"]],\"parameters\":[]}]]],[2,\"\\n    \"]],\"hasEval\":false,\"upvars\":[]}",
+        "meta": {}
+      }));
+      assert.equal(this.element.textContent.trim(), 'template block text');
+    });
+  });
+});
 define("animate-accounting-web/tests/integration/components/scenario-success-button/component-test", ["qunit", "ember-qunit", "@ember/test-helpers"], function (_qunit, _emberQunit, _testHelpers) {
   "use strict";
 

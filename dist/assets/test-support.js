@@ -2652,6 +2652,19 @@ define("ember-testing/lib/test/waiters", ["exports"], function (_exports) {
         
 }());
 
+(function() {
+  var key = '_embroider_macros_runtime_config';
+  if (!window[key]) {
+    window[key] = [];
+  }
+  window[key].push(function(m) {
+    m.setGlobalConfig(
+      '@embroider/macros',
+      Object.assign({}, m.getGlobalConfig()['@embroider/macros'], { isTesting: true })
+    );
+  });
+})();
+
 /* globals require, Ember, jQuery */
 (() => {
   if (typeof jQuery !== 'undefined') {
@@ -10104,19 +10117,6 @@ define("ember-testing/lib/test/waiters", ["exports"], function (_exports) {
       label: 'Mirage logging',
     });
   }
-})();
-
-(function() {
-  var key = '_embroider_macros_runtime_config';
-  if (!window[key]) {
-    window[key] = [];
-  }
-  window[key].push(function(m) {
-    m.setGlobalConfig(
-      '@embroider/macros',
-      Object.assign({}, m.getGlobalConfig()['@embroider/macros'], { isTesting: true })
-    );
-  });
 })();
 
 var QUnitDOM = (function (exports) {

@@ -198,6 +198,90 @@
 
   _exports.default = DynamicElement;
 });
+;define("animate-accounting-web/components/animated-beacon", ["exports", "ember-animated/components/animated-beacon.js"], function (_exports, _animatedBeacon) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(_exports, "default", {
+    enumerable: true,
+    get: function () {
+      return _animatedBeacon.default;
+    }
+  });
+  0; //eaimeta@70e063a35619d71f0,"ember-animated/components/animated-beacon.js"eaimeta@70e063a35619d71f
+});
+;define("animate-accounting-web/components/animated-container", ["exports", "ember-animated/components/animated-container.js"], function (_exports, _animatedContainer) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(_exports, "default", {
+    enumerable: true,
+    get: function () {
+      return _animatedContainer.default;
+    }
+  });
+  0; //eaimeta@70e063a35619d71f0,"ember-animated/components/animated-container.js"eaimeta@70e063a35619d71f
+});
+;define("animate-accounting-web/components/animated-each", ["exports", "ember-animated/components/animated-each.js"], function (_exports, _animatedEach) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(_exports, "default", {
+    enumerable: true,
+    get: function () {
+      return _animatedEach.default;
+    }
+  });
+  0; //eaimeta@70e063a35619d71f0,"ember-animated/components/animated-each.js"eaimeta@70e063a35619d71f
+});
+;define("animate-accounting-web/components/animated-if", ["exports", "ember-animated/components/animated-if.js"], function (_exports, _animatedIf) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(_exports, "default", {
+    enumerable: true,
+    get: function () {
+      return _animatedIf.default;
+    }
+  });
+  0; //eaimeta@70e063a35619d71f0,"ember-animated/components/animated-if.js"eaimeta@70e063a35619d71f
+});
+;define("animate-accounting-web/components/animated-orphans", ["exports", "ember-animated/components/animated-orphans.js"], function (_exports, _animatedOrphans) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(_exports, "default", {
+    enumerable: true,
+    get: function () {
+      return _animatedOrphans.default;
+    }
+  });
+  0; //eaimeta@70e063a35619d71f0,"ember-animated/components/animated-orphans.js"eaimeta@70e063a35619d71f
+});
+;define("animate-accounting-web/components/animated-value", ["exports", "ember-animated/components/animated-value.js"], function (_exports, _animatedValue) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(_exports, "default", {
+    enumerable: true,
+    get: function () {
+      return _animatedValue.default;
+    }
+  });
+  0; //eaimeta@70e063a35619d71f0,"ember-animated/components/animated-value.js"eaimeta@70e063a35619d71f
+});
 ;define("animate-accounting-web/components/basic-dropdown-hover", ["exports", "ember-basic-dropdown-hover/components/basic-dropdown-hover"], function (_exports, _basicDropdownHover) {
   "use strict";
 
@@ -1131,6 +1215,20 @@
 
   var _default = _draggableObject.default;
   _exports.default = _default;
+});
+;define("animate-accounting-web/components/ea-list-element", ["exports", "ember-animated/components/ea-list-element.js"], function (_exports, _eaListElement) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(_exports, "default", {
+    enumerable: true,
+    get: function () {
+      return _eaListElement.default;
+    }
+  });
+  0; //eaimeta@70e063a35619d71f0,"ember-animated/components/ea-list-element.js"eaimeta@70e063a35619d71f
 });
 ;define("animate-accounting-web/components/ember-modal-dialog-positioned-container", ["exports", "ember-modal-dialog/components/positioned-container"], function (_exports, _positionedContainer) {
   "use strict";
@@ -2109,24 +2207,151 @@
   var _default = _objectBin.default;
   _exports.default = _default;
 });
-;define("animate-accounting-web/components/scenario-success-button/template", ["exports"], function (_exports) {
+;define("animate-accounting-web/components/scenario-incorrect-button", ["exports", "@babel/runtime/helpers/esm/initializerDefineProperty", "@babel/runtime/helpers/esm/defineProperty", "@babel/runtime/helpers/esm/applyDecoratedDescriptor", "@babel/runtime/helpers/esm/initializerWarningHelper", "@glimmer/component", "ember-animated/transitions/move-over"], function (_exports, _initializerDefineProperty2, _defineProperty2, _applyDecoratedDescriptor2, _initializerWarningHelper2, _component, _moveOver) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
     value: true
   });
   _exports.default = void 0;
-  0; //eaimeta@70e063a35619d71feaimeta@70e063a35619d71f
 
-  var _default = Ember.HTMLBars.template({
-    "id": "lWc0UVHP",
-    "block": "{\"symbols\":[\"&default\"],\"statements\":[[18,1,null]],\"hasEval\":false,\"upvars\":[]}",
+  var _dec, _dec2, _class, _descriptor;
+
+  0; //eaimeta@70e063a35619d71f0,"@glimmer/component",0,"@glimmer/tracking",0,"@ember/object",0,"ember-animated/transitions/move-over"eaimeta@70e063a35619d71f
+
+  const __COLOCATED_TEMPLATE__ = Ember.HTMLBars.template(
+  /*
+    
+  <NrgButton @class="move-over" @action={{this.toggleShowHello}}> 
+    <AnimatedContainer>
+        {{#animated-if this.showHello rules=this.rules}}
+          <div class="incorrect-answer">
+            {{@answer}}
+          </div>
+        {{else}}
+          <div class="question">
+            {{@question}}
+          </div>
+        {{/animated-if}}
+      </AnimatedContainer>
+  </NrgButton>
+  
+  {{yield}}
+  */
+  {
+    "id": "CV3IdhKE",
+    "block": "{\"symbols\":[\"@question\",\"@answer\",\"&default\"],\"statements\":[[2,\"\\n\"],[8,\"nrg-button\",[],[[\"@class\",\"@action\"],[\"move-over\",[32,0,[\"toggleShowHello\"]]]],[[\"default\"],[{\"statements\":[[2,\" \\n  \"],[8,\"animated-container\",[],[[],[]],[[\"default\"],[{\"statements\":[[2,\"\\n\"],[6,[37,0],[[32,0,[\"showHello\"]]],[[\"rules\"],[[32,0,[\"rules\"]]]],[[\"default\",\"else\"],[{\"statements\":[[2,\"        \"],[10,\"div\"],[14,0,\"incorrect-answer\"],[12],[2,\"\\n          \"],[1,[32,2]],[2,\"\\n        \"],[13],[2,\"\\n\"]],\"parameters\":[]},{\"statements\":[[2,\"        \"],[10,\"div\"],[14,0,\"question\"],[12],[2,\"\\n          \"],[1,[32,1]],[2,\"\\n        \"],[13],[2,\"\\n\"]],\"parameters\":[]}]]],[2,\"    \"]],\"parameters\":[]}]]],[2,\"\\n\"]],\"parameters\":[]}]]],[2,\"\\n\\n\"],[18,3,null]],\"hasEval\":false,\"upvars\":[\"animated-if\"]}",
     "meta": {
-      "moduleName": "animate-accounting-web/components/scenario-success-button/template.hbs"
+      "moduleName": "animate-accounting-web/components/scenario-incorrect-button.hbs"
     }
   });
 
-  _exports.default = _default;
+  let ScenarioIncorrectButton = (_dec = Ember._tracked, _dec2 = Ember._action, (_class = class ScenarioIncorrectButton extends _component.default {
+    constructor() {
+      super(...arguments);
+      (0, _initializerDefineProperty2.default)(this, "showHello", _descriptor, this);
+    }
+
+    toggleShowHello() {
+      this.showHello = !this.showHello;
+    }
+
+    rules(_ref2) {
+      let {
+        newItems
+      } = _ref2;
+
+      if (newItems[0]) {
+        return _moveOver.toUp;
+      } else {
+        return _moveOver.toDown;
+      }
+    }
+
+  }, (_descriptor = (0, _applyDecoratedDescriptor2.default)(_class.prototype, "showHello", [_dec], {
+    configurable: true,
+    enumerable: true,
+    writable: true,
+    initializer: function () {
+      return false;
+    }
+  }), (0, _applyDecoratedDescriptor2.default)(_class.prototype, "toggleShowHello", [_dec2], Object.getOwnPropertyDescriptor(_class.prototype, "toggleShowHello"), _class.prototype)), _class));
+  _exports.default = ScenarioIncorrectButton;
+
+  Ember._setComponentTemplate(__COLOCATED_TEMPLATE__, ScenarioIncorrectButton);
+});
+;define("animate-accounting-web/components/scenario-success-button", ["exports", "@babel/runtime/helpers/esm/initializerDefineProperty", "@babel/runtime/helpers/esm/defineProperty", "@babel/runtime/helpers/esm/applyDecoratedDescriptor", "@babel/runtime/helpers/esm/initializerWarningHelper", "@glimmer/component", "ember-animated/transitions/move-over"], function (_exports, _initializerDefineProperty2, _defineProperty2, _applyDecoratedDescriptor2, _initializerWarningHelper2, _component, _moveOver) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+
+  var _dec, _dec2, _class, _descriptor;
+
+  0; //eaimeta@70e063a35619d71f0,"@glimmer/component",0,"@glimmer/tracking",0,"@ember/object",0,"ember-animated/transitions/move-over"eaimeta@70e063a35619d71f
+
+  const __COLOCATED_TEMPLATE__ = Ember.HTMLBars.template(
+  /*
+    
+  <NrgButton @class="move-over" @action={{this.toggleShowHello}}> 
+    <AnimatedContainer>
+        {{#animated-if this.showHello rules=this.rules}}
+          <div class="answer">
+            {{@answer}}
+          </div>
+        {{else}}
+          <div class="question">
+            {{@question}}
+          </div>
+        {{/animated-if}}
+      </AnimatedContainer>
+  </NrgButton>
+  
+  {{yield}}
+  */
+  {
+    "id": "4xGDIUuF",
+    "block": "{\"symbols\":[\"@question\",\"@answer\",\"&default\"],\"statements\":[[2,\"\\n\"],[8,\"nrg-button\",[],[[\"@class\",\"@action\"],[\"move-over\",[32,0,[\"toggleShowHello\"]]]],[[\"default\"],[{\"statements\":[[2,\" \\n  \"],[8,\"animated-container\",[],[[],[]],[[\"default\"],[{\"statements\":[[2,\"\\n\"],[6,[37,0],[[32,0,[\"showHello\"]]],[[\"rules\"],[[32,0,[\"rules\"]]]],[[\"default\",\"else\"],[{\"statements\":[[2,\"        \"],[10,\"div\"],[14,0,\"answer\"],[12],[2,\"\\n          \"],[1,[32,2]],[2,\"\\n        \"],[13],[2,\"\\n\"]],\"parameters\":[]},{\"statements\":[[2,\"        \"],[10,\"div\"],[14,0,\"question\"],[12],[2,\"\\n          \"],[1,[32,1]],[2,\"\\n        \"],[13],[2,\"\\n\"]],\"parameters\":[]}]]],[2,\"    \"]],\"parameters\":[]}]]],[2,\"\\n\"]],\"parameters\":[]}]]],[2,\"\\n\\n\"],[18,3,null]],\"hasEval\":false,\"upvars\":[\"animated-if\"]}",
+    "meta": {
+      "moduleName": "animate-accounting-web/components/scenario-success-button.hbs"
+    }
+  });
+
+  let ScenarioSuccessButton = (_dec = Ember._tracked, _dec2 = Ember._action, (_class = class ScenarioSuccessButton extends _component.default {
+    constructor() {
+      super(...arguments);
+      (0, _initializerDefineProperty2.default)(this, "showHello", _descriptor, this);
+    }
+
+    toggleShowHello() {
+      this.showHello = !this.showHello;
+    }
+
+    rules(_ref2) {
+      let {
+        newItems
+      } = _ref2;
+
+      if (newItems[0]) {
+        return _moveOver.toUp;
+      } else {
+        return _moveOver.toDown;
+      }
+    }
+
+  }, (_descriptor = (0, _applyDecoratedDescriptor2.default)(_class.prototype, "showHello", [_dec], {
+    configurable: true,
+    enumerable: true,
+    writable: true,
+    initializer: function () {
+      return false;
+    }
+  }), (0, _applyDecoratedDescriptor2.default)(_class.prototype, "toggleShowHello", [_dec2], Object.getOwnPropertyDescriptor(_class.prototype, "toggleShowHello"), _class.prototype)), _class));
+  _exports.default = ScenarioSuccessButton;
+
+  Ember._setComponentTemplate(__COLOCATED_TEMPLATE__, ScenarioSuccessButton);
 });
 ;define("animate-accounting-web/components/sortable-objects", ["exports", "ember-drag-drop/components/sortable-objects"], function (_exports, _sortableObjects) {
   "use strict";
@@ -2349,26 +2574,41 @@
   });
   _exports.default = void 0;
 
-  var _dec, _dec2, _class;
+  var _dec, _dec2, _dec3, _dec4, _dec5, _class;
 
   0; //eaimeta@70e063a35619d71f0,"@ember/controller",0,"@ember/object"eaimeta@70e063a35619d71f
 
-  let AccountingLabsRevenueRecognitionAndMatchingController = (_dec = Ember._action, _dec2 = Ember._action, (_class = class AccountingLabsRevenueRecognitionAndMatchingController extends Ember.Controller {
+  let AccountingLabsRevenueRecognitionAndMatchingController = (_dec = Ember._action, _dec2 = Ember._action, _dec3 = Ember._action, _dec4 = Ember._action, _dec5 = Ember._action, (_class = class AccountingLabsRevenueRecognitionAndMatchingController extends Ember.Controller {
     constructor() {
       super(...arguments);
-      (0, _defineProperty2.default)(this, "openModal1", false);
-      (0, _defineProperty2.default)(this, "isShowingModal", false);
+      (0, _defineProperty2.default)(this, "isShowingModal1", false);
+      (0, _defineProperty2.default)(this, "isShowingModal2", false);
+      (0, _defineProperty2.default)(this, "isShowingModal3", false);
+      (0, _defineProperty2.default)(this, "isShowingModal4", false);
+      (0, _defineProperty2.default)(this, "isShowingModal5", false);
     }
 
-    openScenario1() {
-      this.transitionToRoute('accounting-labs.revenue-recognition-and-matching.scenario');
+    toggleModal1() {
+      this.toggleProperty('isShowingModal1');
     }
 
-    toggleModal() {
-      this.toggleProperty('isShowingModal');
+    toggleModal2() {
+      this.toggleProperty('isShowingModal2');
     }
 
-  }, ((0, _applyDecoratedDescriptor2.default)(_class.prototype, "openScenario1", [_dec], Object.getOwnPropertyDescriptor(_class.prototype, "openScenario1"), _class.prototype), (0, _applyDecoratedDescriptor2.default)(_class.prototype, "toggleModal", [_dec2], Object.getOwnPropertyDescriptor(_class.prototype, "toggleModal"), _class.prototype)), _class));
+    toggleModal3() {
+      this.toggleProperty('isShowingModal3');
+    }
+
+    toggleModal4() {
+      this.toggleProperty('isShowingModal4');
+    }
+
+    toggleModal5() {
+      this.toggleProperty('isShowingModal5');
+    }
+
+  }, ((0, _applyDecoratedDescriptor2.default)(_class.prototype, "toggleModal1", [_dec], Object.getOwnPropertyDescriptor(_class.prototype, "toggleModal1"), _class.prototype), (0, _applyDecoratedDescriptor2.default)(_class.prototype, "toggleModal2", [_dec2], Object.getOwnPropertyDescriptor(_class.prototype, "toggleModal2"), _class.prototype), (0, _applyDecoratedDescriptor2.default)(_class.prototype, "toggleModal3", [_dec3], Object.getOwnPropertyDescriptor(_class.prototype, "toggleModal3"), _class.prototype), (0, _applyDecoratedDescriptor2.default)(_class.prototype, "toggleModal4", [_dec4], Object.getOwnPropertyDescriptor(_class.prototype, "toggleModal4"), _class.prototype), (0, _applyDecoratedDescriptor2.default)(_class.prototype, "toggleModal5", [_dec5], Object.getOwnPropertyDescriptor(_class.prototype, "toggleModal5"), _class.prototype)), _class));
   _exports.default = AccountingLabsRevenueRecognitionAndMatchingController;
 });
 ;define("animate-accounting-web/controllers/accounting-labs/stockholders-equity", ["exports", "@babel/runtime/helpers/esm/initializerDefineProperty", "@babel/runtime/helpers/esm/defineProperty", "@babel/runtime/helpers/esm/applyDecoratedDescriptor", "@babel/runtime/helpers/esm/initializerWarningHelper"], function (_exports, _initializerDefineProperty2, _defineProperty2, _applyDecoratedDescriptor2, _initializerWarningHelper2) {
@@ -5021,6 +5261,20 @@
   });
   0; //eaimeta@70e063a35619d71f0,"@ember-data/serializer/rest"eaimeta@70e063a35619d71f
 });
+;define("animate-accounting-web/services/-ea-motion", ["exports", "ember-animated/services/-ea-motion.js"], function (_exports, _eaMotion) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(_exports, "default", {
+    enumerable: true,
+    get: function () {
+      return _eaMotion.default;
+    }
+  });
+  0; //eaimeta@70e063a35619d71f0,"ember-animated/services/-ea-motion.js"eaimeta@70e063a35619d71f
+});
 ;define("animate-accounting-web/services/-ensure-registered", ["exports", "@embroider/util/services/ensure-registered"], function (_exports, _ensureRegistered) {
   "use strict";
 
@@ -5288,8 +5542,8 @@
   0; //eaimeta@70e063a35619d71feaimeta@70e063a35619d71f
 
   var _default = Ember.HTMLBars.template({
-    "id": "XZrRVtE2",
-    "block": "{\"symbols\":[],\"statements\":[[8,\"navigation-bar\",[],[[],[]],null],[2,\"\\n\"],[10,\"h1\"],[14,0,\"accounting-equation-title\"],[12],[2,\"Revenue Recognition and Matching Principles\"],[13],[2,\"\\n\"],[10,\"div\"],[14,0,\"income-statement-paragraph\"],[12],[2,\"\\n  \"],[10,\"p\"],[12],[2,\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\n  \"],[13],[2,\"\\n\"],[13],[2,\"\\n\"],[10,\"div\"],[14,0,\"income-statement-paragraph-2\"],[12],[2,\"\\n  \"],[10,\"p\"],[12],[2,\"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In ante metus dictum at tempor commodo ullamcorper. Id consectetur purus ut faucibus pulvinar elementum. Enim tortor at auctor urna nunc id cursus metus. Ac tortor dignissim convallis aenean et tortor at. Facilisis leo vel fringilla est ullamcorper eget. Curabitur gravida arcu ac tortor. Non pulvinar neque laoreet suspendisse interdum consectetur. Porttitor lacus luctus accumsan tortor posuere ac ut. Eleifend mi in nulla posuere sollicitudin aliquam. Nulla pellentesque dignissim enim sit amet venenatis urna cursus eget. Quis viverra nibh cras pulvinar mattis nunc sed blandit libero. Nec ullamcorper sit amet risus nullam. Ut ornare lectus sit amet est. Tristique magna sit amet purus gravida quis blandit turpis cursus. Eros in cursus turpis massa tincidunt dui.\\n  \"],[13],[2,\"\\n\"],[13],[2,\"\\n\\n\"],[2,\"\\n\"],[8,\"nrg-button\",[],[[\"@text\",\"@action\"],[\"Scenario 1\",\"toggleModal\"]],null],[2,\"\\n\\n\"],[6,[37,4],[[35,0]],null,[[\"default\"],[{\"statements\":[[6,[37,3],null,[[\"onClose\",\"targetAttachment\",\"translucentOverlay\"],[[30,[36,2],[[32,0],\"toggleModal\"],null],\"center\",true]],[[\"default\"],[{\"statements\":[[2,\"  \"],[8,\"nrg-button\",[],[[\"@action\"],[[30,[36,2],[[32,0],[30,[36,1],[[35,0]],null],false],null]]],[[\"default\"],[{\"statements\":[[2,\"\\n    \"],[10,\"i\"],[14,0,\"fa fa-1x fa-times cancel-button\"],[14,\"aria-hidden\",\"true\"],[12],[13],[2,\"\\n  \"]],\"parameters\":[]}]]],[2,\"\\n    \\n  Mary went to \\n\\n\"]],\"parameters\":[]}]]]],\"parameters\":[]}]]],[2,\"\\n\"],[2,\"\\n\\n\"],[1,[30,[36,6],[[30,[36,5],null,null]],null]]],\"hasEval\":false,\"upvars\":[\"isShowingModal\",\"mut\",\"action\",\"modal-dialog\",\"if\",\"-outlet\",\"component\"]}",
+    "id": "xFsvALZ6",
+    "block": "{\"symbols\":[],\"statements\":[[8,\"navigation-bar\",[],[[],[]],null],[2,\"\\n\"],[10,\"h1\"],[14,0,\"accounting-equation-title\"],[12],[2,\"Revenue Recognition and Matching Principles\"],[13],[2,\"\\n\"],[10,\"div\"],[14,0,\"income-statement-paragraph\"],[12],[2,\"\\n  \"],[10,\"p\"],[12],[2,\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna\\n    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\\n    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur\\n    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\n  \"],[13],[2,\"\\n\"],[13],[2,\"\\n\"],[10,\"div\"],[14,0,\"income-statement-paragraph-2\"],[12],[2,\"\\n  \"],[10,\"p\"],[12],[2,\"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna\\n    aliqua. In ante metus dictum at tempor commodo ullamcorper. Id consectetur purus ut faucibus pulvinar elementum.\\n    Enim tortor at auctor urna nunc id cursus metus. Ac tortor dignissim convallis aenean et tortor at. Facilisis leo\\n    vel fringilla est ullamcorper eget. Curabitur gravida arcu ac tortor. Non pulvinar neque laoreet suspendisse\\n    interdum consectetur. Porttitor lacus luctus accumsan tortor posuere ac ut. Eleifend mi in nulla posuere\\n    sollicitudin aliquam. Nulla pellentesque dignissim enim sit amet venenatis urna cursus eget. Quis viverra nibh cras\\n    pulvinar mattis nunc sed blandit libero. Nec ullamcorper sit amet risus nullam. Ut ornare lectus sit amet est.\\n    Tristique magna sit amet purus gravida quis blandit turpis cursus. Eros in cursus turpis massa tincidunt dui.\\n  \"],[13],[2,\"\\n\"],[13],[2,\"\\n\\n\"],[2,\"\\n\"],[10,\"div\"],[14,0,\"scenario-buttons-location\"],[12],[2,\"\\n  \"],[8,\"nrg-button\",[],[[\"@text\",\"@action\",\"@class\"],[\"Scenario 1\",\"toggleModal1\",\"scenario-button\"]],null],[2,\"\\n\"],[6,[37,8],[[35,7]],null,[[\"default\"],[{\"statements\":[[6,[37,3],null,[[\"onClose\",\"targetAttachment\",\"translucentOverlay\"],[[30,[36,2],[[32,0],\"toggleModal1\"],null],\"center\",true]],[[\"default\"],[{\"statements\":[[2,\"  \"],[8,\"nrg-button\",[],[[\"@action\",\"@class\"],[[30,[36,2],[[32,0],[30,[36,1],[[35,7]],null],false],null],\"cancel-button\"]],[[\"default\"],[{\"statements\":[[2,\"\\n    \"],[10,\"i\"],[14,0,\"fa fa-1x fa-times cancel-button-icon\"],[14,\"aria-hidden\",\"true\"],[12],[13],[2,\"\\n  \"]],\"parameters\":[]}]]],[2,\"\\n\\n  \"],[10,\"p\"],[12],[2,\"Mary went to the store and bought a bag of apples on \"],[10,\"strong\"],[12],[2,\"credit\"],[13],[2,\". The store manager, Chris, immediately\\n    gave her the bag of apples. Does the store wait to record revenue?\"],[13],[2,\"\\n\\n  \"],[10,\"div\"],[14,0,\"answers-location\"],[12],[2,\"\\n    \"],[8,\"scenario-success-button\",[],[[\"@question\",\"@answer\"],[\"No\",\"Nice job!\"]],null],[2,\"\\n    \"],[8,\"scenario-incorrect-button\",[],[[\"@question\",\"@answer\"],[\"Yes\",\"Try again\"]],null],[2,\"\\n  \"],[13],[2,\"\\n\\n\"]],\"parameters\":[]}]]]],\"parameters\":[]}]]],[2,\"\\n\"],[2,\"\\n\"],[2,\"\\n  \"],[8,\"nrg-button\",[],[[\"@text\",\"@action\",\"@class\"],[\"Scenario 2\",\"toggleModal2\",\"scenario-button\"]],null],[2,\"\\n\"],[6,[37,8],[[35,6]],null,[[\"default\"],[{\"statements\":[[6,[37,3],null,[[\"onClose\",\"targetAttachment\",\"translucentOverlay\"],[[30,[36,2],[[32,0],\"toggleModal2\"],null],\"center\",true]],[[\"default\"],[{\"statements\":[[2,\"  \"],[8,\"nrg-button\",[],[[\"@action\",\"@class\"],[[30,[36,2],[[32,0],[30,[36,1],[[35,6]],null],false],null],\"cancel-button\"]],[[\"default\"],[{\"statements\":[[2,\"\\n    \"],[10,\"i\"],[14,0,\"fa fa-1x fa-times cancel-button-icon\"],[14,\"aria-hidden\",\"true\"],[12],[13],[2,\"\\n  \"]],\"parameters\":[]}]]],[2,\"\\n\\n  \"],[10,\"p\"],[12],[2,\"Mary went to the store and bought a bag of apples on \"],[10,\"strong\"],[12],[2,\"credit\"],[13],[2,\". The store manager, Chris, immediately\\n    gave her the bag of apples. Does the store wait to record revenue?\"],[13],[2,\"\\n\\n  \"],[10,\"div\"],[14,0,\"answers-location\"],[12],[2,\"\\n    \"],[8,\"scenario-success-button\",[],[[\"@question\",\"@answer\"],[\"No\",\"Nice job!\"]],null],[2,\"\\n    \"],[8,\"scenario-incorrect-button\",[],[[\"@question\",\"@answer\"],[\"Yes\",\"Try again\"]],null],[2,\"\\n  \"],[13],[2,\"\\n\\n\"]],\"parameters\":[]}]]]],\"parameters\":[]}]]],[2,\"\\n\"],[2,\"\\n\"],[2,\"\\n  \"],[8,\"nrg-button\",[],[[\"@text\",\"@action\",\"@class\"],[\"Scenario 3\",\"toggleModal3\",\"scenario-button\"]],null],[2,\"\\n\"],[6,[37,8],[[35,5]],null,[[\"default\"],[{\"statements\":[[6,[37,3],null,[[\"onClose\",\"targetAttachment\",\"translucentOverlay\"],[[30,[36,2],[[32,0],\"toggleModal3\"],null],\"center\",true]],[[\"default\"],[{\"statements\":[[8,\"nrg-button\",[],[[\"@action\",\"@class\"],[[30,[36,2],[[32,0],[30,[36,1],[[35,5]],null],false],null],\"cancel-button\"]],[[\"default\"],[{\"statements\":[[2,\"\\n  \"],[10,\"i\"],[14,0,\"fa fa-1x fa-times cancel-button-icon\"],[14,\"aria-hidden\",\"true\"],[12],[13],[2,\"\\n\"]],\"parameters\":[]}]]],[2,\"\\n\\n\"],[10,\"p\"],[12],[2,\"Mary went to the store and bought a bag of apples on \"],[10,\"strong\"],[12],[2,\"credit\"],[13],[2,\". The store manager, Chris, immediately\\n  gave her the bag of apples. Does the store wait to record revenue?\"],[13],[2,\"\\n\\n\"],[10,\"div\"],[14,0,\"answers-location\"],[12],[2,\"\\n  \"],[8,\"scenario-success-button\",[],[[\"@question\",\"@answer\"],[\"No\",\"Nice job!\"]],null],[2,\"\\n  \"],[8,\"scenario-incorrect-button\",[],[[\"@question\",\"@answer\"],[\"Yes\",\"Try again\"]],null],[2,\"\\n\"],[13],[2,\"\\n\\n\"]],\"parameters\":[]}]]]],\"parameters\":[]}]]],[2,\"\\n\"],[2,\"\\n\"],[2,\"\\n  \"],[8,\"nrg-button\",[],[[\"@text\",\"@action\",\"@class\"],[\"Scenario 4\",\"toggleModal4\",\"scenario-button\"]],null],[2,\"\\n\"],[6,[37,8],[[35,4]],null,[[\"default\"],[{\"statements\":[[6,[37,3],null,[[\"onClose\",\"targetAttachment\",\"translucentOverlay\"],[[30,[36,2],[[32,0],\"toggleModal4\"],null],\"center\",true]],[[\"default\"],[{\"statements\":[[8,\"nrg-button\",[],[[\"@action\",\"@class\"],[[30,[36,2],[[32,0],[30,[36,1],[[35,4]],null],false],null],\"cancel-button\"]],[[\"default\"],[{\"statements\":[[2,\"\\n  \"],[10,\"i\"],[14,0,\"fa fa-1x fa-times cancel-button-icon\"],[14,\"aria-hidden\",\"true\"],[12],[13],[2,\"\\n\"]],\"parameters\":[]}]]],[2,\"\\n\\n\"],[10,\"p\"],[12],[2,\"Mary went to the store and bought a bag of apples on \"],[10,\"strong\"],[12],[2,\"credit\"],[13],[2,\". The store manager, Chris, immediately\\n  gave her the bag of apples. Does the store wait to record revenue?\"],[13],[2,\"\\n\\n\"],[10,\"div\"],[14,0,\"answers-location\"],[12],[2,\"\\n  \"],[8,\"scenario-success-button\",[],[[\"@question\",\"@answer\"],[\"No\",\"Nice job!\"]],null],[2,\"\\n  \"],[8,\"scenario-incorrect-button\",[],[[\"@question\",\"@answer\"],[\"Yes\",\"Try again\"]],null],[2,\"\\n\"],[13],[2,\"\\n\\n\"]],\"parameters\":[]}]]]],\"parameters\":[]}]]],[2,\"\\n\"],[2,\"\\n\"],[2,\"\\n  \"],[8,\"nrg-button\",[],[[\"@text\",\"@action\",\"@class\"],[\"Scenario 5\",\"toggleModal5\",\"scenario-button\"]],null],[2,\"\\n\"],[6,[37,8],[[35,0]],null,[[\"default\"],[{\"statements\":[[6,[37,3],null,[[\"onClose\",\"targetAttachment\",\"translucentOverlay\"],[[30,[36,2],[[32,0],\"toggleModal5\"],null],\"center\",true]],[[\"default\"],[{\"statements\":[[8,\"nrg-button\",[],[[\"@action\",\"@class\"],[[30,[36,2],[[32,0],[30,[36,1],[[35,0]],null],false],null],\"cancel-button\"]],[[\"default\"],[{\"statements\":[[2,\"\\n  \"],[10,\"i\"],[14,0,\"fa fa-1x fa-times cancel-button-icon\"],[14,\"aria-hidden\",\"true\"],[12],[13],[2,\"\\n\"]],\"parameters\":[]}]]],[2,\"\\n\\n\"],[10,\"p\"],[12],[2,\"Mary went to the store and bought a bag of apples on \"],[10,\"strong\"],[12],[2,\"credit\"],[13],[2,\". The store manager, Chris, immediately\\n  gave her the bag of apples. Does the store wait to record revenue?\"],[13],[2,\"\\n\\n\"],[10,\"div\"],[14,0,\"answers-location\"],[12],[2,\"\\n  \"],[8,\"scenario-success-button\",[],[[\"@question\",\"@answer\"],[\"No\",\"Nice job!\"]],null],[2,\"\\n  \"],[8,\"scenario-incorrect-button\",[],[[\"@question\",\"@answer\"],[\"Yes\",\"Try again\"]],null],[2,\"\\n\"],[13],[2,\"\\n\\n\"]],\"parameters\":[]}]]]],\"parameters\":[]}]]],[13],[2,\"\\n\"],[1,[30,[36,10],[[30,[36,9],null,null]],null]]],\"hasEval\":false,\"upvars\":[\"isShowingModal5\",\"mut\",\"action\",\"modal-dialog\",\"isShowingModal4\",\"isShowingModal3\",\"isShowingModal2\",\"isShowingModal1\",\"if\",\"-outlet\",\"component\"]}",
     "meta": {
       "moduleName": "animate-accounting-web/templates/accounting-labs/revenue-recognition-and-matching/index.hbs"
     }
@@ -5794,7 +6048,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("animate-accounting-web/app")["default"].create({"name":"animate-accounting-web","version":"0.0.0+9bd44511"});
+            require("animate-accounting-web/app")["default"].create({"name":"animate-accounting-web","version":"0.0.0+c826460d"});
           }
         
 //# sourceMappingURL=animate-accounting-web.map

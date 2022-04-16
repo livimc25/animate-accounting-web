@@ -14258,6 +14258,7 @@ body {
   left: 0px;
   text-align: center;
   color: white;
+  font-size: large;
 }
 
 .ready-to-begin {
@@ -14270,8 +14271,17 @@ body {
   color: white !important;
 }
 
-.cancel-button {
+.cancel-button-icon {
   color: black !important;
+}
+
+.cancel-button {
+  float: right;
+  margin-bottom: 2em !important;
+}
+
+.answers-location {
+  margin-left: 21%;
 }
 
 .banner-getting-started {
@@ -14581,8 +14591,53 @@ body {
   background-color: rgba(110, 102, 88, 0.83);
 }
 
-.pink {
-  background-color: pink;
+.move-over {
+  display: flex;
+  padding: 0 !important;
+}
+
+.move-over > .animated-container {
+  overflow: hidden;
+  padding: 0;
+}
+
+.move-over .answer {
+  width: 12em;
+  background-color: rgb(82, 143, 82);
+  color: white;
+  font: italic bold 16px/2 cursive;
+  box-sizing: border-box;
+  padding: 2em;
+}
+
+.move-over .incorrect-answer {
+  width: 12em;
+  background-color: rgb(199, 64, 64);
+  color: white;
+  font: italic bold 16px/2 cursive;
+  box-sizing: border-box;
+  padding: 2em;
+}
+
+.move-over .question {
+  width: 12em;
+  background-color: #E0E1E2;
+  color: rgb(17, 45, 50);
+  font: italic bold 16px/2 cursive;
+  box-sizing: border-box;
+  padding: 2em;
+}
+
+.scenario-button {
+  padding: 2em !important;
+  margin-left: 2% !important;
+}
+
+.scenario-buttons-location {
+  margin-top: 3%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=animate-accounting-web.css.map */
