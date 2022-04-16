@@ -1,5 +1,8 @@
 @import "ember-bootstrap/bootstrap";
 @import "font-awesome";
+@import 'nrg-override';
+@import "ember-modal-dialog/ember-modal-structure";
+@import "ember-modal-dialog/ember-modal-appearance";
 
 :root {
   --main-light-color: #254E58;
@@ -25,6 +28,7 @@ body {
   left: 0px;
   text-align: center;
   color: #ffff;
+  font-size: large;
 }
 
 .ready-to-begin {
@@ -37,6 +41,19 @@ body {
   color: #ffff !important;
 }
 
+.cancel-button-icon {
+  color: black !important;
+}
+
+.cancel-button {
+  float: right;
+  margin-bottom: 2em !important;
+}
+
+.answers-location {
+  margin-left: 21%;
+}
+
 .banner-getting-started {
   right: 300px;
   top: 22px;
@@ -45,8 +62,8 @@ body {
 }
 
 .banner-accounting-labs {
-  right: 125px;
-  top: 18px;
+  right: 5%;
+  top: 25%;
   position: absolute;
   text-decoration: none;
   font-size: 20px;
@@ -160,34 +177,20 @@ body {
   top: 150px;
 }
 
-.accounting-equation-button {
-  position: absolute;
-  left: 25%;
-  top: 55%;
+.lab-button {
+  margin-left: 0%;
 }
 
-.revenue-recognition-button {
-  position: absolute;
-  left: 55%;
-  top: 35%;
+.accounting-labs-links-top {
+    position: absolute;
+    top: 40%;
+    margin-left: 15%;
 }
 
-.income-statement-button {
-  position: absolute;
-  left: 34%;
-  top: 35%;
-}
-
-.balance-sheet-button {
-  position: absolute;
-  left: 15%;
-  top: 35%;
-}
-
-.stockholders-button {
-  position: absolute;
-  left: 48%;
-  top: 55%;
+.accounting-labs-links-bottom {
+    position: absolute;
+    margin-left: 27%;
+    top: 61%;
 }
 
 .btn-light {
@@ -207,9 +210,9 @@ body {
 .accounting-equation-title {
   color: #ffff;
   font-weight: 400;
-  position: absolute;
-  left: 15%;
-  top: 18%;
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .total-assets {
@@ -284,13 +287,12 @@ body {
 .income-statement-title {
   color: #ffff;
   font-weight: 400;
-  position: absolute;
-  left: 15%;
-  top: 15%;
+  margin-top: 5%;
+  margin-left: 15%;
 }
 
 .income-statement-paragraph {
-  margin-top: 10%;
+  margin-top: 5%;
   margin-left: 10%;
   margin-right: 10%;
   color: white;
@@ -302,8 +304,6 @@ body {
   margin-right: 10%;
   color: white;
 }
-
-//test
 
 .sortObject {
   margin: 1em;
@@ -333,4 +333,63 @@ body {
   margin-right: 0%;
   margin-left: 2%;
   margin-top: 5%;
+}
+
+#balance-sheet-body {
+    background-image: url(https://ncfca.org/wp-content/uploads/NCFCA-Nats-Day-6-e1605761095815.jpg);
+    background-color: #073763;
+    color: #ffffff;
+}
+
+#balance-sheet-body .picture-overlay {
+    background-color: rgba(110, 102, 88, 0.83);
+}
+
+.move-over {
+  display: flex;
+  padding: 0 !important;
+}
+
+.move-over > .animated-container {
+  overflow: hidden;
+  padding: 0;
+}
+
+.move-over .answer {
+  width: 12em;
+  background-color: rgb(82, 143, 82);
+  color: white;
+  font: italic bold 16px/2 cursive;
+  box-sizing: border-box;
+  padding: 2em;
+}
+
+.move-over .incorrect-answer {
+  width: 12em;
+  background-color: rgb(199, 64, 64);
+  color: white;
+  font: italic bold 16px/2 cursive;
+  box-sizing: border-box;
+  padding: 2em;
+}
+
+.move-over .question {
+  width: 12em;
+  background-color: #E0E1E2;
+  color: rgb(17, 45, 50);
+  font: italic bold 16px/2 cursive;
+  box-sizing: border-box;
+  padding: 2em;
+}
+
+.scenario-button {
+  padding: 2em !important;
+  margin-left: 2% !important;
+}
+
+.scenario-buttons-location {
+  margin-top: 3%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center
 }

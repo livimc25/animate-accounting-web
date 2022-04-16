@@ -1,0 +1,153 @@
+<NavigationBar />
+<h1 class="accounting-equation-title">Revenue Recognition and Matching Principles</h1>
+<div class="income-statement-paragraph">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+</div>
+<div class="income-statement-paragraph-2">
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. In ante metus dictum at tempor commodo ullamcorper. Id consectetur purus ut faucibus pulvinar elementum.
+    Enim tortor at auctor urna nunc id cursus metus. Ac tortor dignissim convallis aenean et tortor at. Facilisis leo
+    vel fringilla est ullamcorper eget. Curabitur gravida arcu ac tortor. Non pulvinar neque laoreet suspendisse
+    interdum consectetur. Porttitor lacus luctus accumsan tortor posuere ac ut. Eleifend mi in nulla posuere
+    sollicitudin aliquam. Nulla pellentesque dignissim enim sit amet venenatis urna cursus eget. Quis viverra nibh cras
+    pulvinar mattis nunc sed blandit libero. Nec ullamcorper sit amet risus nullam. Ut ornare lectus sit amet est.
+    Tristique magna sit amet purus gravida quis blandit turpis cursus. Eros in cursus turpis massa tincidunt dui.
+  </p>
+</div>
+
+{{!-- scenario1 --}}
+
+<div class="scenario-buttons-location">
+  <NrgButton @text="Scenario 1" @action="toggleModal1" @class="scenario-button" />
+  {{#if isShowingModal1}}
+  {{#modal-dialog
+  onClose=(action "toggleModal1")
+  targetAttachment="center"
+  translucentOverlay=true
+  }}
+  <NrgButton @action={{action (mut isShowingModal1) false}} @class="cancel-button">
+    {{fa-icon "times" size="1" class="cancel-button-icon"}}
+  </NrgButton>
+
+  <p>Mary went to the store and bought a bag of apples on <strong>credit</strong>. The store manager, Chris, immediately
+    gave her the bag of apples. Does the store wait to record revenue?</p>
+
+  <div class="answers-location">
+    <ScenarioSuccessButton @question="No" @answer="Nice job!" />
+    <ScenarioIncorrectButton @question="Yes" @answer="Try again" />
+  </div>
+
+  {{/modal-dialog}}
+  {{/if}}
+
+  {{!-- end scenario1 --}}
+
+  {{!-- scenario2 --}}
+
+  <NrgButton @text="Scenario 2" @action="toggleModal2" @class="scenario-button" />
+  {{#if isShowingModal2}}
+  {{#modal-dialog
+  onClose=(action "toggleModal2")
+  targetAttachment="center"
+  translucentOverlay=true
+  }}
+  <NrgButton @action={{action (mut isShowingModal2) false}} @class="cancel-button">
+    {{fa-icon "times" size="1" class="cancel-button-icon"}}
+  </NrgButton>
+
+  <p>Mary went to the store and bought a bag of apples on <strong>credit</strong>. The store manager, Chris, immediately
+    gave her the bag of apples. Does the store wait to record revenue?</p>
+
+  <div class="answers-location">
+    <ScenarioSuccessButton @question="No" @answer="Nice job!" />
+    <ScenarioIncorrectButton @question="Yes" @answer="Try again" />
+  </div>
+
+  {{/modal-dialog}}
+  {{/if}}
+
+  {{!-- end scenario2 --}}
+
+  {{!-- scenario3 --}}
+
+  <NrgButton @text="Scenario 3" @action="toggleModal3" @class="scenario-button" />
+{{#if isShowingModal3}}
+{{#modal-dialog
+onClose=(action "toggleModal3")
+targetAttachment="center"
+translucentOverlay=true
+}}
+<NrgButton @action={{action (mut isShowingModal3) false}} @class="cancel-button">
+  {{fa-icon "times" size="1" class="cancel-button-icon"}}
+</NrgButton>
+
+<p>Mary went to the store and bought a bag of apples on <strong>credit</strong>. The store manager, Chris, immediately
+  gave her the bag of apples. Does the store wait to record revenue?</p>
+
+<div class="answers-location">
+  <ScenarioSuccessButton @question="No" @answer="Nice job!" />
+  <ScenarioIncorrectButton @question="Yes" @answer="Try again" />
+</div>
+
+{{/modal-dialog}}
+{{/if}}
+
+{{!-- end scenario3 --}}
+
+{{!-- scenario4 --}}
+
+  <NrgButton @text="Scenario 4" @action="toggleModal4" @class="scenario-button" />
+{{#if isShowingModal4}}
+{{#modal-dialog
+onClose=(action "toggleModal4")
+targetAttachment="center"
+translucentOverlay=true
+}}
+<NrgButton @action={{action (mut isShowingModal4) false}} @class="cancel-button">
+  {{fa-icon "times" size="1" class="cancel-button-icon"}}
+</NrgButton>
+
+<p>Mary went to the store and bought a bag of apples on <strong>credit</strong>. The store manager, Chris, immediately
+  gave her the bag of apples. Does the store wait to record revenue?</p>
+
+<div class="answers-location">
+  <ScenarioSuccessButton @question="No" @answer="Nice job!" />
+  <ScenarioIncorrectButton @question="Yes" @answer="Try again" />
+</div>
+
+{{/modal-dialog}}
+{{/if}}
+
+{{!-- end scenario4 --}}
+
+{{!-- scenario5 --}}
+
+  <NrgButton @text="Scenario 5" @action="toggleModal5" @class="scenario-button" />
+{{#if isShowingModal5}}
+{{#modal-dialog
+onClose=(action "toggleModal5")
+targetAttachment="center"
+translucentOverlay=true
+}}
+<NrgButton @action={{action (mut isShowingModal5) false}} @class="cancel-button">
+  {{fa-icon "times" size="1" class="cancel-button-icon"}}
+</NrgButton>
+
+<p>Mary went to the store and bought a bag of apples on <strong>credit</strong>. The store manager, Chris, immediately
+  gave her the bag of apples. Does the store wait to record revenue?</p>
+
+<div class="answers-location">
+  <ScenarioSuccessButton @question="No" @answer="Nice job!" />
+  <ScenarioIncorrectButton @question="Yes" @answer="Try again" />
+</div>
+
+{{/modal-dialog}}
+{{/if}}
+</div>
+{{!-- end scenario5 --}}
+{{outlet}}
