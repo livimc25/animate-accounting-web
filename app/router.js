@@ -7,7 +7,6 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
-  // nrgRoutes(this);
 
   this.route('what-is-accounting');
   this.route('why-learn-accounting');

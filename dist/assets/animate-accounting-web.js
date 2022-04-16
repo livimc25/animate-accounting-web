@@ -4873,7 +4873,6 @@
 
   _exports.default = Router;
   Router.map(function () {
-    // nrgRoutes(this);
     this.route('what-is-accounting');
     this.route('why-learn-accounting');
     this.route('accounting-labs', function () {
@@ -5523,8 +5522,8 @@
   0; //eaimeta@70e063a35619d71feaimeta@70e063a35619d71f
 
   var _default = Ember.HTMLBars.template({
-    "id": "xljEy84d",
-    "block": "{\"symbols\":[],\"statements\":[[8,\"navigation-bar\",[],[[],[]],null],[2,\"\\n\"],[10,\"h1\"],[14,0,\"accounting-labs-header\"],[12],[2,\"Accounting Labs\"],[13],[2,\"\\n\"],[10,\"div\"],[14,0,\"accounting-labs-links-top\"],[12],[2,\"\\n    \"],[8,\"link-to\",[],[[\"@route\",\"@class\"],[\"accounting-labs.income-statement\",\"income-statement-button\"]],[[\"default\"],[{\"statements\":[[2,\"\\n        \"],[8,\"bs-button\",[],[[\"@size\",\"@type\"],[\"lg\",\"light\"]],[[\"default\"],[{\"statements\":[[2,\"The Income Statement\"]],\"parameters\":[]}]]],[2,\"\\n    \"]],\"parameters\":[]}]]],[2,\"\\n    \"],[8,\"link-to\",[],[[\"@route\",\"@class\"],[\"accounting-labs.balance-sheet\",\"balance-sheet-button\"]],[[\"default\"],[{\"statements\":[[2,\"\\n        \"],[8,\"bs-button\",[],[[\"@size\",\"@type\"],[\"lg\",\"light\"]],[[\"default\"],[{\"statements\":[[2,\"The Balance Sheet\"]],\"parameters\":[]}]]],[2,\"\\n    \"]],\"parameters\":[]}]]],[2,\"\\n    \"],[8,\"link-to\",[],[[\"@route\",\"@class\"],[\"accounting-labs.revenue-recognition-and-matching\",\"revenue-recognition-button\"]],[[\"default\"],[{\"statements\":[[2,\"\\n        \"],[8,\"bs-button\",[],[[\"@size\",\"@type\"],[\"lg\",\"light\"]],[[\"default\"],[{\"statements\":[[2,\"Revenue Recognition and Matching Principles\"]],\"parameters\":[]}]]],[2,\"\\n    \"]],\"parameters\":[]}]]],[2,\"\\n\"],[13],[2,\"\\n\"],[10,\"div\"],[14,0,\"accounting-labs-links-bottom\"],[12],[2,\"\\n    \"],[8,\"link-to\",[],[[\"@route\",\"@class\"],[\"accounting-labs.accounting-equation\",\"accounting-equation-button\"]],[[\"default\"],[{\"statements\":[[2,\"\\n        \"],[8,\"bs-button\",[],[[\"@size\",\"@type\"],[\"lg\",\"light\"]],[[\"default\"],[{\"statements\":[[2,\"The Accounting Equation\"]],\"parameters\":[]}]]],[2,\"\\n    \"]],\"parameters\":[]}]]],[2,\"\\n    \"],[8,\"link-to\",[],[[\"@route\",\"@class\"],[\"accounting-labs.stockholders-equity\",\"stockholders-button\"]],[[\"default\"],[{\"statements\":[[2,\"\\n        \"],[8,\"bs-button\",[],[[\"@size\",\"@type\"],[\"lg\",\"light\"]],[[\"default\"],[{\"statements\":[[2,\"Statement of Retained Earnings\"]],\"parameters\":[]}]]],[2,\"\\n    \"]],\"parameters\":[]}]]],[2,\"\\n\"],[13],[2,\"\\n\"],[1,[30,[36,1],[[30,[36,0],null,null]],null]]],\"hasEval\":false,\"upvars\":[\"-outlet\",\"component\"]}",
+    "id": "jisn4Cr5",
+    "block": "{\"symbols\":[],\"statements\":[[8,\"navigation-bar\",[],[[],[]],null],[2,\"\\n\"],[10,\"h1\"],[14,0,\"accounting-labs-header\"],[12],[2,\"Accounting Labs\"],[13],[2,\"\\n\"],[10,\"div\"],[14,0,\"accounting-labs-links-top\"],[12],[2,\"\\n    \"],[8,\"link-to\",[],[[\"@route\",\"@class\"],[\"accounting-labs.income-statement\",\"lab-button\"]],[[\"default\"],[{\"statements\":[[2,\"\\n        \"],[8,\"bs-button\",[],[[\"@size\",\"@type\"],[\"lg\",\"light\"]],[[\"default\"],[{\"statements\":[[2,\"The Income Statement\"]],\"parameters\":[]}]]],[2,\"\\n    \"]],\"parameters\":[]}]]],[2,\"\\n    \"],[8,\"link-to\",[],[[\"@route\",\"@class\"],[\"accounting-labs.balance-sheet\",\"lab-button\"]],[[\"default\"],[{\"statements\":[[2,\"\\n        \"],[8,\"bs-button\",[],[[\"@size\",\"@type\"],[\"lg\",\"light\"]],[[\"default\"],[{\"statements\":[[2,\"The Balance Sheet\"]],\"parameters\":[]}]]],[2,\"\\n    \"]],\"parameters\":[]}]]],[2,\"\\n    \"],[8,\"link-to\",[],[[\"@route\",\"@class\"],[\"accounting-labs.revenue-recognition-and-matching\",\"lab-button\"]],[[\"default\"],[{\"statements\":[[2,\"\\n        \"],[8,\"bs-button\",[],[[\"@size\",\"@type\"],[\"lg\",\"light\"]],[[\"default\"],[{\"statements\":[[2,\"Revenue Recognition and Matching Principles\"]],\"parameters\":[]}]]],[2,\"\\n    \"]],\"parameters\":[]}]]],[2,\"\\n\"],[13],[2,\"\\n\"],[10,\"div\"],[14,0,\"accounting-labs-links-bottom\"],[12],[2,\"\\n    \"],[8,\"link-to\",[],[[\"@route\",\"@class\"],[\"accounting-labs.accounting-equation\",\"lab-button\"]],[[\"default\"],[{\"statements\":[[2,\"\\n        \"],[8,\"bs-button\",[],[[\"@size\",\"@type\"],[\"lg\",\"light\"]],[[\"default\"],[{\"statements\":[[2,\"The Accounting Equation\"]],\"parameters\":[]}]]],[2,\"\\n    \"]],\"parameters\":[]}]]],[2,\"\\n    \"],[8,\"link-to\",[],[[\"@route\",\"@class\"],[\"accounting-labs.stockholders-equity\",\"lab-button\"]],[[\"default\"],[{\"statements\":[[2,\"\\n        \"],[8,\"bs-button\",[],[[\"@size\",\"@type\"],[\"lg\",\"light\"]],[[\"default\"],[{\"statements\":[[2,\"Statement of Retained Earnings\"]],\"parameters\":[]}]]],[2,\"\\n    \"]],\"parameters\":[]}]]],[2,\"\\n\"],[13],[2,\"\\n\"],[1,[30,[36,1],[[30,[36,0],null,null]],null]]],\"hasEval\":false,\"upvars\":[\"-outlet\",\"component\"]}",
     "meta": {
       "moduleName": "animate-accounting-web/templates/accounting-labs/index.hbs"
     }
@@ -6048,7 +6047,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("animate-accounting-web/app")["default"].create({"name":"animate-accounting-web","version":"0.0.0+c826460d"});
+            require("animate-accounting-web/app")["default"].create({"name":"animate-accounting-web","version":"0.0.0+df756260"});
           }
         
 //# sourceMappingURL=animate-accounting-web.map
