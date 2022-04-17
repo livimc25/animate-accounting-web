@@ -70,10 +70,11 @@ body {
 }
 
 .welcome-message {
-  font-weight: 400;
+  font-weight: 500;
   position: absolute;
-  left: 28%;
-  top: 23%;
+  left: 10%;
+  top: 50%;
+  color: #302e2c;
 }
 
 .btn {
@@ -85,14 +86,20 @@ body {
 
 .what-btn-location {
   position: absolute;
-  top: 40%;
-  left: 40%;
+  top: 30%;
+  left: 65%;
 }
 
 .why-btn-location {
   position: absolute;
-  top: 60%;
-  left: 37%;
+  top: 70%;
+  left: 65%;
+}
+
+.lab-btn-location {
+  position: absolute;
+  top: 50%;
+  left: 65%;
 }
 
 .descriptive-headers {
@@ -118,10 +125,6 @@ body {
 	margin: auto;
 	position: relative;
 	display: block;
-}
-
-.center{
-	padding-top: 40%;
 }
 
 .quarter{
@@ -170,11 +173,11 @@ body {
 }
 
 .why-learn-accounting-header {
-  color: #ffff;
+  color: #302e2c;
   font-weight: 300;
-  position: absolute;
-  left: 300px;
-  top: 150px;
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-bottom: 5%;
 }
 
 .lab-button {
@@ -205,6 +208,7 @@ body {
   position: absolute;
   left: 40%;
   top: 20%;
+  color: #302e2c;
 }
 
 .accounting-equation-title {
@@ -336,13 +340,118 @@ body {
 }
 
 #balance-sheet-body {
-    background-image: url(https://ncfca.org/wp-content/uploads/NCFCA-Nats-Day-6-e1605761095815.jpg);
+    background-image: url(images/Image1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #073763;
     color: #ffffff;
+    margin-bottom: 2%;
 }
 
 #balance-sheet-body .picture-overlay {
     background-color: rgba(110, 102, 88, 0.83);
+}
+
+#main-page-body {
+  background-image: url(images/Image2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #073763;
+  color: #ffffff;
+}
+
+#main-page-body .main-picture-overlay {
+  background-color: rgba(136, 189, 188, 0.83);
+  height: 100%;
+  width: 100%;
+}
+
+#accounting-labs-body {
+  background-image: url(images/Image4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #073763;
+  color: #ffffff;
+}
+
+#accounting-labs-body .labs-picture-overlay {
+  background-color: rgba(136, 189, 188, 0.83);
+  height: 100%;
+  width: 100%;
+}
+
+#accounting-equation-body {
+  background-image: url(images/Image3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #073763;
+  color: #ffffff;
+}
+
+#accounting-equation-body .equation-picture-overlay {
+  background-color: rgba(17, 45, 50, 0.83);
+  height: 120%;
+  width: 100%;
+}
+
+#revenue-recognition-body {
+  background-image: url(https://ncfca.org/wp-content/uploads/NCFCA-Nats-Day-6-e1605761095815.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #073763;
+  color: #ffffff;
+}
+
+#revenue-recognition-body .revenue-picture-overlay {
+  background-color: rgba(17, 45, 50, 0.83);
+  height: 120%;
+  width: 100%;
+}
+
+#income-statement-body {
+  background-image: url(https://ncfca.org/wp-content/uploads/NCFCA-Nats-Day-6-e1605761095815.jpg);
+  background-color: #073763;
+  color: #ffffff;
+  margin-bottom: 2%;
+}
+
+#income-statement-body .income-picture-overlay {
+  background-color: rgba(110, 102, 88, 0.83);
+}
+
+#equity-body {
+  background-image: url(https://ncfca.org/wp-content/uploads/NCFCA-Nats-Day-6-e1605761095815.jpg);
+  background-color: #073763;
+  color: #ffffff;
+  margin-bottom: 2%;
+}
+
+#equity-body .equity-picture-overlay {
+  background-color: rgba(110, 102, 88, 0.83);
+}
+
+#why-learn-body {
+  background-image: url(https://ncfca.org/wp-content/uploads/NCFCA-Nats-Day-6-e1605761095815.jpg);
+  background-color: #073763;
+  color: #ffffff;
+}
+
+#why-learn-body .why-picture-overlay {
+  background-color: rgba(136, 189, 188, 0.83);
+  height: 100%;
+  width: 100%;
+}
+
+#what-is-accounting-body {
+  background-image: url(https://ncfca.org/wp-content/uploads/NCFCA-Nats-Day-6-e1605761095815.jpg);
+  background-color: #073763;
+  color: #ffffff;
+}
+
+#what-is-accounting-body .what-picture-overlay {
+  background-color: rgba(17, 45, 50, 0.83);
+  height: 120%;
+  width: 100%;
 }
 
 .move-over {

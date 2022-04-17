@@ -6,10 +6,6 @@ export default class extends Route {
   @service store;
   createdStore = false;
 
-  beforeModel(transition) {
-    document.body.style.backgroundColor = "#6E6658"
-  }
-
   model() {
     if (!this.createdStore) {
       let oie = this.store.createRecord('page',{id:6, title:'Other Income and Expenses'});

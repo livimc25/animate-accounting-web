@@ -1,38 +1,42 @@
-<NavigationBar/>
-<h1 class="income-statement-title">The Income Statement</h1>
-<div class="income-statement-paragraph">
-  <p>The Income Statement is one of the four main financial statements. Its purpose is to display revenues and expenses 
-  for a stated period of time. On the Income Statement, revenues, or sales, have a normal credit balance. Expenses have 
-  a normal debit balance. The accounts in the Income Statement are all considered to be temporary, and they will be 
-  reversed at the end of the period. To discover more about the income statement, click <a href="https://www.investopedia.com/terms/i/incomestatement.asp" class="ready-to-begin">here</a>.
-  </p>
-</div>
-<div class="income-statement-paragraph-2">
-  <p>
-    To complete the Income Statement lab, arrange the following Income Statement items as they would normally appear 
-    on a completed Income Statement. You will see a success message when they are in the correct order.
-  </p>
-</div>
-<div class="income-statement-sort-objects">
-  <SortableObjects 
-    @sortableObjectList={{this.model.pages}} 
-    @sortEndAction={{fn this.sortEndAction}} 
-    @enableSort={{true}}
-  >
-    {{#each this.model.pages as |item|}}
-      <DraggableObject @content={{item}} @overrideClass={{'sort-new-object'}} @isSortable={{true}}>
-        {{item.title}}
-      </DraggableObject>
-    {{/each}}
-  </SortableObjects>
-</div>
-<br><br>
-{{#if this.sortFinishText}}
-  <SweetAlert
-    @show={{this.controller.sortFinishText}}
-    @title="Nice work!"
-    @text="You have successfully completed an Income Statement"
-    @icon="success"
-    @willClose={{this.controller.reset}}
-  />
-{{/if}}
+<body id="income-statement-body">
+  <div class="income-picture-overlay">
+  <NavigationBar/>
+  <h1 class="accounting-equation-title">The Income Statement</h1>
+  <div class="income-statement-paragraph">
+    <p>The Income Statement is one of the four main financial statements. Its purpose is to display revenues and expenses 
+    for a stated period of time. On the Income Statement, revenues, or sales, have a normal credit balance. Expenses have 
+    a normal debit balance. The accounts in the Income Statement are all considered to be temporary, and they will be 
+    reversed at the end of the period. To discover more about the income statement, click <a href="https://www.investopedia.com/terms/i/incomestatement.asp" class="ready-to-begin">here</a>.
+    </p>
+  </div>
+  <div class="income-statement-paragraph-2">
+    <p>
+      To complete the Income Statement lab, arrange the following Income Statement items as they would normally appear 
+      on a completed Income Statement. You will see a success message when they are in the correct order.
+    </p>
+  </div>
+  <div class="income-statement-sort-objects">
+    <SortableObjects 
+      @sortableObjectList={{this.model.pages}} 
+      @sortEndAction={{fn this.sortEndAction}} 
+      @enableSort={{true}}
+    >
+      {{#each this.model.pages as |item|}}
+        <DraggableObject @content={{item}} @overrideClass={{'sort-new-object'}} @isSortable={{true}}>
+          {{item.title}}
+        </DraggableObject>
+      {{/each}}
+    </SortableObjects>
+  </div>
+  <br><br>
+  {{#if this.sortFinishText}}
+    <SweetAlert
+      @show={{this.controller.sortFinishText}}
+      @title="Nice work!"
+      @text="You have successfully completed an Income Statement"
+      @icon="success"
+      @willClose={{this.controller.reset}}
+    />
+  {{/if}}
+  </div>
+</body>
