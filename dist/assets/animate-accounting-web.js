@@ -6013,7 +6013,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("animate-accounting-web/app")["default"].create({"name":"animate-accounting-web","version":"0.0.0+dee8f19a"});
+            require("animate-accounting-web/app")["default"].create({"name":"animate-accounting-web","version":"0.0.0+9c3fde1a"});
           }
         
 //# sourceMappingURL=animate-accounting-web.map
