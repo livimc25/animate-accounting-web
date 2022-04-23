@@ -4893,17 +4893,54 @@
     this.route('stockholders-equity');
   });
 });
-;define("animate-accounting-web/routes/accounting-labs/accounting-equation/index", ["exports"], function (_exports) {
+;define("animate-accounting-web/routes/accounting-labs/accounting-equation/index", ["exports", "@babel/runtime/helpers/esm/defineProperty", "@babel/runtime/helpers/esm/applyDecoratedDescriptor"], function (_exports, _defineProperty2, _applyDecoratedDescriptor2) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
     value: true
   });
   _exports.default = void 0;
-  0; //eaimeta@70e063a35619d71f0,"@ember/routing/route"eaimeta@70e063a35619d71f
 
-  class AccountingLabsAccountingEquationIndexRoute extends Ember.Route {}
+  var _dec, _class;
 
+  0; //eaimeta@70e063a35619d71f0,"@ember/routing/route",0,"@ember/object",0,"@ember/array"eaimeta@70e063a35619d71f
+
+  let AccountingLabsAccountingEquationIndexRoute = (_dec = Ember._action, (_class = class AccountingLabsAccountingEquationIndexRoute extends Ember.Route {
+    constructor() {
+      super(...arguments);
+      (0, _defineProperty2.default)(this, "resetArray", Ember.A([{
+        id: 5,
+        title: 'Bonds Payable $120'
+      }, {
+        id: 4,
+        title: 'Notes Payable $50'
+      }, {
+        id: 6,
+        title: '+'
+      }, {
+        id: 7,
+        title: 'Common Stock $90'
+      }, {
+        id: 2,
+        title: 'Copyright $250'
+      }, {
+        id: 8,
+        title: 'Retained Earnings $490'
+      }, {
+        id: 3,
+        title: '='
+      }, {
+        id: 1,
+        title: 'Cash $500'
+      }]));
+    }
+
+    exit() {
+      this.controller.set('sortableObjectList', this.resetArray);
+      this.controller.set('sortFinishText', false);
+    }
+
+  }, ((0, _applyDecoratedDescriptor2.default)(_class.prototype, "exit", [_dec], Object.getOwnPropertyDescriptor(_class.prototype, "exit"), _class.prototype)), _class));
   _exports.default = AccountingLabsAccountingEquationIndexRoute;
 });
 ;define("animate-accounting-web/routes/accounting-labs/balance-sheet", ["exports", "@babel/runtime/helpers/esm/initializerDefineProperty", "@babel/runtime/helpers/esm/defineProperty", "@babel/runtime/helpers/esm/applyDecoratedDescriptor", "@babel/runtime/helpers/esm/initializerWarningHelper"], function (_exports, _initializerDefineProperty2, _defineProperty2, _applyDecoratedDescriptor2, _initializerWarningHelper2) {
@@ -5114,17 +5151,42 @@
 
   _exports.default = AccountingLabsRevenueRecognitionAndMatchingRoute;
 });
-;define("animate-accounting-web/routes/accounting-labs/stockholders-equity", ["exports"], function (_exports) {
+;define("animate-accounting-web/routes/accounting-labs/stockholders-equity", ["exports", "@babel/runtime/helpers/esm/defineProperty", "@babel/runtime/helpers/esm/applyDecoratedDescriptor"], function (_exports, _defineProperty2, _applyDecoratedDescriptor2) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
     value: true
   });
   _exports.default = void 0;
-  0; //eaimeta@70e063a35619d71f0,"@ember/routing/route"eaimeta@70e063a35619d71f
 
-  class AccountingLabsStockholdersEquityRoute extends Ember.Route {}
+  var _dec, _class;
 
+  0; //eaimeta@70e063a35619d71f0,"@ember/routing/route",0,"@ember/object",0,"@ember/array"eaimeta@70e063a35619d71f
+
+  let AccountingLabsStockholdersEquityRoute = (_dec = Ember._action, (_class = class AccountingLabsStockholdersEquityRoute extends Ember.Route {
+    constructor() {
+      super(...arguments);
+      (0, _defineProperty2.default)(this, "resetArray", Ember.A([{
+        id: 3,
+        title: '- Dividends'
+      }, {
+        id: 1,
+        title: 'Beginning Retained Earnings'
+      }, {
+        id: 4,
+        title: 'Ending Retained Earnings'
+      }, {
+        id: 2,
+        title: '+ Net Income'
+      }]));
+    }
+
+    exit() {
+      this.controller.set('sortableObjectList', this.resetArray);
+      this.controller.set('sortFinishText', false);
+    }
+
+  }, ((0, _applyDecoratedDescriptor2.default)(_class.prototype, "exit", [_dec], Object.getOwnPropertyDescriptor(_class.prototype, "exit"), _class.prototype)), _class));
   _exports.default = AccountingLabsStockholdersEquityRoute;
 });
 ;define("animate-accounting-web/routes/getting-started/index", ["exports"], function (_exports) {
@@ -6013,7 +6075,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("animate-accounting-web/app")["default"].create({"name":"animate-accounting-web","version":"0.0.0+9c3fde1a"});
+            require("animate-accounting-web/app")["default"].create({"name":"animate-accounting-web","version":"0.0.0+3eaf0e00"});
           }
         
 //# sourceMappingURL=animate-accounting-web.map

@@ -7,13 +7,13 @@ export default class AccountingLabsAccountingEquationIndexController extends Con
   @tracked useSwap = true;
   sortableObjectList = A(
     [{id: 5, title:'Bonds Payable $120'},
-      {id: 4, title:'Notes Payable $50'},
-      {id: 6, title:'+'},
-      {id: 7, title:'Common Stock $90'},
-      {id: 2, title:'Copyright $250'},
-      {id: 8, title:'Retained Earnings $490'},
-      {id: 3, title:'='},
-      {id: 1, title:'Cash $500'}]
+    {id: 4, title:'Notes Payable $50'},
+    {id: 6, title:'+'},
+    {id: 7, title:'Common Stock $90'},
+    {id: 2, title:'Copyright $250'},
+    {id: 8, title:'Retained Earnings $490'},
+    {id: 3, title:'='},
+    {id: 1, title:'Cash $500'}]
   )
 
   sortFinishText = false;

@@ -7,13 +7,13 @@ export default class AccountingLabsStockholdersEquityController extends Controll
     @tracked useSwap = true;
     sortableObjectList = A(
       [{id: 3, title:'- Dividends'},
-        {id: 1, title:'Beginning Retained Earnings'},
-        {id: 4, title:'Ending Retained Earnings'},
-        {id: 2, title:'+ Net Income'}]
-    )
+      {id: 1, title:'Beginning Retained Earnings'},
+      {id: 4, title:'Ending Retained Earnings'},
+      {id: 2, title:'+ Net Income'}]
+    );
   
     sortFinishText = false;
-    
+
     @action
     dragStart(object) {
       console.log('Drag Start', object);
