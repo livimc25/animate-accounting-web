@@ -3,22 +3,19 @@
     <NavigationBar />
     <h1 class="accounting-equation-title">Revenue Recognition and Matching Principles</h1>
     <div class="income-statement-paragraph">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <p>There are multiple principles that are critical for Accountants, but two of the most important principles
+        are the Revenue Recognition Principle and the Matching Principle. While these two principles go together, it must
+        be noted that they are two distinct concepts in accounting. The Revenue Recognition Principle states that revenues should
+        be recognized when the service has been performed or the goods have been delivered. It should be noted that it is irrelevant when
+        cash is paid. Revenue may still be recognized when a customer pays on credit. The Matching Principle states that the corresponding
+        expenses relating to a transaction must be recorded in the same period in which the revenue is recorded for that transaction. The Revenue
+        Recognition and Matching principles apply to businesses that use the accrual basis of accounting. To learn
+        more about the Revenue Recognition and Matching Principles, click <a href="https://accountingproficient.com/financial-accounting/revenue-recognition-matching-principle-explained/" class="ready-to-begin">here</a>.
       </p>
     </div>
     <div class="income-statement-paragraph-2">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. In ante metus dictum at tempor commodo ullamcorper. Id consectetur purus ut faucibus pulvinar elementum.
-        Enim tortor at auctor urna nunc id cursus metus. Ac tortor dignissim convallis aenean et tortor at. Facilisis leo
-        vel fringilla est ullamcorper eget. Curabitur gravida arcu ac tortor. Non pulvinar neque laoreet suspendisse
-        interdum consectetur. Porttitor lacus luctus accumsan tortor posuere ac ut. Eleifend mi in nulla posuere
-        sollicitudin aliquam. Nulla pellentesque dignissim enim sit amet venenatis urna cursus eget. Quis viverra nibh cras
-        pulvinar mattis nunc sed blandit libero. Nec ullamcorper sit amet risus nullam. Ut ornare lectus sit amet est.
-        Tristique magna sit amet purus gravida quis blandit turpis cursus. Eros in cursus turpis massa tincidunt dui.
+        To complete the Revenue Recognition and Matching Principles lab, walk through the following scenarios and learn when a company should record Revenues and Expenses.
       </p>
     </div>
 
@@ -36,12 +33,12 @@
         {{fa-icon "times" size="1" class="cancel-button-icon"}}
       </NrgButton>
 
-      <p>Mary went to the store and bought a bag of apples on <strong>credit</strong>. The store manager, Chris, immediately
-        gave her the bag of apples. Does the store wait to record revenue?</p>
+      <p class="revenue-recognition-text">Isaiah went to the store and bought a bag of apples on <strong>credit</strong>. The store manager, Joy, immediately
+        gave her the bag of apples. Does the store wait to record revenue until they receive cash?</p>
 
       <div class="answers-location">
         <ScenarioSuccessButton @question="No" @answer="Nice job!" />
-        <ScenarioIncorrectButton @question="Yes" @answer="Try again" />
+        <ScenarioIncorrectButton @question="Yes" @answer="Try again"/>
       </div>
 
       {{/modal-dialog}}
@@ -62,12 +59,11 @@
         {{fa-icon "times" size="1" class="cancel-button-icon"}}
       </NrgButton>
 
-      <p>Mary went to the store and bought a bag of apples on <strong>credit</strong>. The store manager, Chris, immediately
-        gave her the bag of apples. Does the store wait to record revenue?</p>
+      <p class="revenue-recognition-text">Dr. Wilson orders monthly lawn maintenance for an entire year from Green Lawn Service. When does Green Lawn Service record revenue?</p>
 
       <div class="answers-location">
-        <ScenarioSuccessButton @question="No" @answer="Nice job!" />
-        <ScenarioIncorrectButton @question="Yes" @answer="Try again" />
+        <ScenarioSuccessButton @question="Every month they perform the service" @answer="Correct!" />
+        <ScenarioIncorrectButton @question="Only when Dr. Wilson pays the bill" @answer="Keep studying!" />
       </div>
 
       {{/modal-dialog}}
@@ -88,12 +84,14 @@
       {{fa-icon "times" size="1" class="cancel-button-icon"}}
     </NrgButton>
 
-    <p>Mary went to the store and bought a bag of apples on <strong>credit</strong>. The store manager, Chris, immediately
-      gave her the bag of apples. Does the store wait to record revenue?</p>
+    <p class="revenue-recognition-text">
+      Kate goes to the eye doctor on a Monday morning, and checks out without being charged. On Friday, 
+      she receives a bill for her visit. When does the eye doctor record revenue from her visit?
+    </p>
 
     <div class="answers-location">
-      <ScenarioSuccessButton @question="No" @answer="Nice job!" />
-      <ScenarioIncorrectButton @question="Yes" @answer="Try again" />
+      <ScenarioSuccessButton @question="Monday" @answer="Great!" />
+      <ScenarioIncorrectButton @question="Friday" @answer="Not quite" />
     </div>
 
     {{/modal-dialog}}
@@ -114,12 +112,15 @@
       {{fa-icon "times" size="1" class="cancel-button-icon"}}
     </NrgButton>
 
-    <p>Mary went to the store and bought a bag of apples on <strong>credit</strong>. The store manager, Chris, immediately
-      gave her the bag of apples. Does the store wait to record revenue?</p>
+    <p class="revenue-recognition-text">
+      Carrie is a dog groomer, and she has one client who requires a very expensive shampoo. After grooming Buddy, the dog, Buddy's owner 
+      Jake promises Carrie he will pay her at their next appointment. Since Jake is a regular customer, she feels comfortable with the arrangement.
+      On her books, she can debit her Accounts Receivable, but when can she debit the associated expenses from the appointment? 
+    </p>
 
     <div class="answers-location">
-      <ScenarioSuccessButton @question="No" @answer="Nice job!" />
-      <ScenarioIncorrectButton @question="Yes" @answer="Try again" />
+      <ScenarioIncorrectButton @question="At the next appointment" @answer="Nope!" />
+      <ScenarioSuccessButton @question="At this immediate moment" @answer="Excellent work!" />
     </div>
 
     {{/modal-dialog}}
@@ -140,12 +141,15 @@
       {{fa-icon "times" size="1" class="cancel-button-icon"}}
     </NrgButton>
 
-    <p>Mary went to the store and bought a bag of apples on <strong>credit</strong>. The store manager, Chris, immediately
-      gave her the bag of apples. Does the store wait to record revenue?</p>
+    <p class="revenue-recognition-text">
+      Jeremy orders a pizza one night through an online website. He is able to pay for the pizza online as well. The pizza company immediately 
+      receives his payment and sends a delivery of pizza to his doorstep. Just 15 minutes later, Jeremy receives his pizza. When did the pizza 
+      company record revenue?
+    </p>
 
     <div class="answers-location">
-      <ScenarioSuccessButton @question="No" @answer="Nice job!" />
-      <ScenarioIncorrectButton @question="Yes" @answer="Try again" />
+      <ScenarioSuccessButton @question="When the pizza was delivered" @answer="Awesome work!" />
+      <ScenarioIncorrectButton @question="When Jeremy paid online" @answer="Keep trying" />
     </div>
 
     {{/modal-dialog}}

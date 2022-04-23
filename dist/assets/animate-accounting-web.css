@@ -14284,19 +14284,16 @@ body {
   margin-left: 21%;
 }
 
-.banner-getting-started {
-  right: 300px;
-  top: 22px;
-  position: absolute;
-  text-decoration: none;
-}
-
 .banner-accounting-labs {
   right: 5%;
   top: 25%;
   position: absolute;
   text-decoration: none;
   font-size: 20px;
+}
+
+.banner-accounting-labs:hover {
+  text-shadow: 1px 1px 3px #88BDBC;
 }
 
 .welcome-message {
@@ -14344,29 +14341,44 @@ body {
   width: 420px;
   height: 315px;
   position: absolute;
-  left: 37%;
+  left: 20%;
   top: 40%;
+  margin-top: 3%;
+}
+
+.embedded-video-2 {
+  width: 420px;
+  height: 315px;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  margin-top: 3%;
 }
 
 .box {
   width: 80vh;
-  height: 80vh;
-  /* border: solid black; */
+  height: 60vh;
   margin: auto;
   position: relative;
   display: block;
 }
 
+.center {
+  padding-top: 10%;
+}
+
 .quarter {
-  padding-top: 30%;
+  padding-top: 10%;
 }
 
 .dialog-1 {
-  height: 20%;
+  height: 58%;
   width: 40%;
   background-color: var(--main-light-color);
   position: absolute;
   border-radius: 10%;
+  text-align: center;
+  padding: 15px;
 }
 
 .left-point {
@@ -14376,18 +14388,20 @@ body {
   border-right: 2vh solid transparent;
   border-top: 10vh solid var(--main-light-color);
   position: absolute;
-  top: 45%;
+  top: 43%;
   left: -10%;
   transform: rotate(90deg);
 }
 
 .dialog-2 {
-  height: 20%;
+  height: 58%;
   width: 40%;
   background-color: var(--main-light-color);
   position: absolute;
   border-radius: 10%;
   right: 0;
+  text-align: center;
+  padding: 15px;
 }
 
 .right-point {
@@ -14397,17 +14411,17 @@ body {
   border-right: 2vh solid transparent;
   border-top: 10vh solid var(--main-light-color);
   position: absolute;
-  top: 45%;
+  top: 7%;
   right: -10%;
   transform: rotate(-90deg);
 }
 
 .why-learn-accounting-header {
   color: #302e2c;
-  font-weight: 300;
+  font-weight: 400;
+  margin-left: 10%;
   margin-top: 5%;
-  margin-left: 15%;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 .lab-button {
@@ -14416,14 +14430,18 @@ body {
 
 .accounting-labs-links-top {
   position: absolute;
-  top: 40%;
-  margin-left: 15%;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 .accounting-labs-links-bottom {
   position: absolute;
-  margin-left: 27%;
-  top: 61%;
+  top: 70%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 .btn-light {
@@ -14436,8 +14454,10 @@ body {
 .accounting-labs-header {
   font-weight: 400;
   position: absolute;
-  left: 40%;
-  top: 20%;
+  top: 25%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
   color: #302e2c;
 }
 
@@ -14447,41 +14467,6 @@ body {
   margin-left: 10%;
   margin-top: 5%;
   margin-bottom: 5%;
-}
-
-.total-assets {
-  position: absolute;
-  left: 150px;
-  top: 300px;
-  color: white;
-}
-
-.equals {
-  position: absolute;
-  left: 250px;
-  top: 300px;
-  color: white;
-}
-
-.total-liabilities {
-  position: absolute;
-  left: 300px;
-  top: 300px;
-  color: white;
-}
-
-.plus {
-  position: absolute;
-  left: 350px;
-  top: 300px;
-  color: white;
-}
-
-.total-equity {
-  position: absolute;
-  left: 400px;
-  top: 300px;
-  color: white;
 }
 
 .dropTarget {
@@ -14528,6 +14513,7 @@ body {
   margin-left: 10%;
   margin-right: 10%;
   color: white;
+  font-size: large;
 }
 
 .income-statement-paragraph-2 {
@@ -14535,6 +14521,7 @@ body {
   margin-left: 10%;
   margin-right: 10%;
   color: white;
+  font-size: large;
 }
 
 .sortObject {
@@ -14564,9 +14551,9 @@ body {
 }
 
 .accounting-equation-game {
-  margin-right: 0%;
-  margin-left: 2%;
   margin-top: 5%;
+  left: 3%;
+  position: absolute;
 }
 
 #balance-sheet-body {
@@ -14597,7 +14584,7 @@ body {
 }
 
 #accounting-labs-body {
-  background-image: url(images/Image4.jpg);
+  background-image: url(images/Image27.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #073763;
@@ -14620,12 +14607,11 @@ body {
 
 #accounting-equation-body .equation-picture-overlay {
   background-color: rgba(17, 45, 50, 0.83);
-  height: 120%;
-  width: 100%;
+  height: 100%;
 }
 
 #revenue-recognition-body {
-  background-image: url(https://ncfca.org/wp-content/uploads/NCFCA-Nats-Day-6-e1605761095815.jpg);
+  background-image: url(images/Image20.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #073763;
@@ -14634,12 +14620,13 @@ body {
 
 #revenue-recognition-body .revenue-picture-overlay {
   background-color: rgba(17, 45, 50, 0.83);
-  height: 120%;
-  width: 100%;
+  height: 100%;
 }
 
 #income-statement-body {
-  background-image: url(https://ncfca.org/wp-content/uploads/NCFCA-Nats-Day-6-e1605761095815.jpg);
+  background-image: url(images/Image13.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #073763;
   color: #ffffff;
   margin-bottom: 2%;
@@ -14650,7 +14637,9 @@ body {
 }
 
 #equity-body {
-  background-image: url(https://ncfca.org/wp-content/uploads/NCFCA-Nats-Day-6-e1605761095815.jpg);
+  background-image: url(images/Image26.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #073763;
   color: #ffffff;
   margin-bottom: 2%;
@@ -14661,7 +14650,9 @@ body {
 }
 
 #why-learn-body {
-  background-image: url(https://ncfca.org/wp-content/uploads/NCFCA-Nats-Day-6-e1605761095815.jpg);
+  background-image: url(images/Image4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #073763;
   color: #ffffff;
 }
@@ -14669,18 +14660,19 @@ body {
 #why-learn-body .why-picture-overlay {
   background-color: rgba(136, 189, 188, 0.83);
   height: 100%;
-  width: 100%;
 }
 
 #what-is-accounting-body {
-  background-image: url(https://ncfca.org/wp-content/uploads/NCFCA-Nats-Day-6-e1605761095815.jpg);
+  background-image: url(images/Image28.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #073763;
   color: #ffffff;
 }
 
 #what-is-accounting-body .what-picture-overlay {
   background-color: rgba(17, 45, 50, 0.83);
-  height: 120%;
+  height: 100%;
   width: 100%;
 }
 
@@ -14698,7 +14690,8 @@ body {
   width: 12em;
   background-color: rgb(82, 143, 82);
   color: white;
-  font: italic bold 16px/2 cursive;
+  font: cursive;
+  font-size: medium;
   box-sizing: border-box;
   padding: 2em;
 }
@@ -14707,7 +14700,8 @@ body {
   width: 12em;
   background-color: rgb(199, 64, 64);
   color: white;
-  font: italic bold 16px/2 cursive;
+  font: cursive;
+  font-size: medium;
   box-sizing: border-box;
   padding: 2em;
 }
@@ -14716,7 +14710,8 @@ body {
   width: 12em;
   background-color: #E0E1E2;
   color: rgb(17, 45, 50);
-  font: italic bold 16px/2 cursive;
+  font: cursive;
+  font-size: medium;
   box-sizing: border-box;
   padding: 2em;
 }
@@ -14731,6 +14726,50 @@ body {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+}
+
+.seymour-photo {
+  position: absolute;
+  top: 50%;
+  left: 18%;
+  border: 1px solid black;
+  height: 25%;
+  border-radius: 50%;
+}
+
+.seth-photo {
+  position: absolute;
+  top: 47%;
+  left: 73%;
+  border: 1px solid black;
+  height: 25%;
+  border-radius: 50%;
+}
+
+.why-learn-accounting-paragraph {
+  margin-left: 10%;
+  margin-right: 10%;
+  color: #302e2c;
+  font-size: large;
+}
+
+.what-is-accounting-title {
+  color: white;
+  font-weight: 400;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.what-is-accounting-paragraph {
+  margin-top: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: white;
+  font-size: large;
+}
+
+.revenue-recognition-text {
+  font-size: medium;
 }
 
 /*# sourceMappingURL=animate-accounting-web.css.map */
