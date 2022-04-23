@@ -1,9 +1,13 @@
 <body id="balance-sheet-body">
   <div class="picture-overlay">
     <NavigationBar/>
-    <h1 class="income-statement-title">The Balance Sheet</h1>
+    <h1 class="accounting-equation-title">The Balance Sheet</h1>
     <div class="income-statement-paragraph">
-      <p>TODO
+      <p>
+        The Balance Sheet is one of the four main financial statements, and its purpose is to display all the assets that a company owns along with its 
+        liabilities. Total stockholder's equity is also included on the Balance Sheet. The most important way to know if one is "in balance" is to see if the 
+        total assets match the total liabilities plus stockholder's equity. When these two line items match, one can reasonably ascertain that they completed
+        the Balance Sheet correctly. To learn more about the Balance Sheet, click <a href="https://www.investopedia.com/terms/b/balancesheet.asp" class="ready-to-begin">here</a>.
       </p>
     </div>
     <div class="income-statement-paragraph-2">
@@ -29,7 +33,7 @@
     {{#if this.sortFinishText}}
       <SweetAlert
         @show={{this.controller.sortFinishText}}
-        @title="Great job!"
+        @title="Well done!"
         @text="You have successfully completed a Balance Sheet"
         @icon="success"
         @willClose={{this.controller.reset}}
