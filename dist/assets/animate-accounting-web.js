@@ -2222,9 +2222,9 @@
   const __COLOCATED_TEMPLATE__ = Ember.HTMLBars.template(
   /*
     
-  <NrgButton @class="move-over" @action={{this.toggleShowHello}}> 
+  <NrgButton @class="move-over" @action={{this.toggleShowIncorrectAnswer}}> 
     <AnimatedContainer>
-        {{#animated-if this.showHello rules=this.rules}}
+        {{#animated-if this.showIncorrectAnswer rules=this.rules}}
           <div class="incorrect-answer">
             {{@answer}}
           </div>
@@ -2239,8 +2239,8 @@
   {{yield}}
   */
   {
-    "id": "CV3IdhKE",
-    "block": "{\"symbols\":[\"@question\",\"@answer\",\"&default\"],\"statements\":[[2,\"\\n\"],[8,\"nrg-button\",[],[[\"@class\",\"@action\"],[\"move-over\",[32,0,[\"toggleShowHello\"]]]],[[\"default\"],[{\"statements\":[[2,\" \\n  \"],[8,\"animated-container\",[],[[],[]],[[\"default\"],[{\"statements\":[[2,\"\\n\"],[6,[37,0],[[32,0,[\"showHello\"]]],[[\"rules\"],[[32,0,[\"rules\"]]]],[[\"default\",\"else\"],[{\"statements\":[[2,\"        \"],[10,\"div\"],[14,0,\"incorrect-answer\"],[12],[2,\"\\n          \"],[1,[32,2]],[2,\"\\n        \"],[13],[2,\"\\n\"]],\"parameters\":[]},{\"statements\":[[2,\"        \"],[10,\"div\"],[14,0,\"question\"],[12],[2,\"\\n          \"],[1,[32,1]],[2,\"\\n        \"],[13],[2,\"\\n\"]],\"parameters\":[]}]]],[2,\"    \"]],\"parameters\":[]}]]],[2,\"\\n\"]],\"parameters\":[]}]]],[2,\"\\n\\n\"],[18,3,null]],\"hasEval\":false,\"upvars\":[\"animated-if\"]}",
+    "id": "T/GHX8sG",
+    "block": "{\"symbols\":[\"@question\",\"@answer\",\"&default\"],\"statements\":[[2,\"\\n\"],[8,\"nrg-button\",[],[[\"@class\",\"@action\"],[\"move-over\",[32,0,[\"toggleShowIncorrectAnswer\"]]]],[[\"default\"],[{\"statements\":[[2,\" \\n  \"],[8,\"animated-container\",[],[[],[]],[[\"default\"],[{\"statements\":[[2,\"\\n\"],[6,[37,0],[[32,0,[\"showIncorrectAnswer\"]]],[[\"rules\"],[[32,0,[\"rules\"]]]],[[\"default\",\"else\"],[{\"statements\":[[2,\"        \"],[10,\"div\"],[14,0,\"incorrect-answer\"],[12],[2,\"\\n          \"],[1,[32,2]],[2,\"\\n        \"],[13],[2,\"\\n\"]],\"parameters\":[]},{\"statements\":[[2,\"        \"],[10,\"div\"],[14,0,\"question\"],[12],[2,\"\\n          \"],[1,[32,1]],[2,\"\\n        \"],[13],[2,\"\\n\"]],\"parameters\":[]}]]],[2,\"    \"]],\"parameters\":[]}]]],[2,\"\\n\"]],\"parameters\":[]}]]],[2,\"\\n\\n\"],[18,3,null]],\"hasEval\":false,\"upvars\":[\"animated-if\"]}",
     "meta": {
       "moduleName": "animate-accounting-web/components/scenario-incorrect-button.hbs"
     }
@@ -2249,11 +2249,11 @@
   let ScenarioIncorrectButton = (_dec = Ember._tracked, _dec2 = Ember._action, (_class = class ScenarioIncorrectButton extends _component.default {
     constructor() {
       super(...arguments);
-      (0, _initializerDefineProperty2.default)(this, "showHello", _descriptor, this);
+      (0, _initializerDefineProperty2.default)(this, "showIncorrectAnswer", _descriptor, this);
     }
 
-    toggleShowHello() {
-      this.showHello = !this.showHello;
+    toggleShowIncorrectAnswer() {
+      this.showIncorrectAnswer = !this.showIncorrectAnswer;
     }
 
     rules(_ref2) {
@@ -2268,14 +2268,14 @@
       }
     }
 
-  }, (_descriptor = (0, _applyDecoratedDescriptor2.default)(_class.prototype, "showHello", [_dec], {
+  }, (_descriptor = (0, _applyDecoratedDescriptor2.default)(_class.prototype, "showIncorrectAnswer", [_dec], {
     configurable: true,
     enumerable: true,
     writable: true,
     initializer: function () {
       return false;
     }
-  }), (0, _applyDecoratedDescriptor2.default)(_class.prototype, "toggleShowHello", [_dec2], Object.getOwnPropertyDescriptor(_class.prototype, "toggleShowHello"), _class.prototype)), _class));
+  }), (0, _applyDecoratedDescriptor2.default)(_class.prototype, "toggleShowIncorrectAnswer", [_dec2], Object.getOwnPropertyDescriptor(_class.prototype, "toggleShowIncorrectAnswer"), _class.prototype)), _class));
   _exports.default = ScenarioIncorrectButton;
 
   Ember._setComponentTemplate(__COLOCATED_TEMPLATE__, ScenarioIncorrectButton);
@@ -2295,9 +2295,9 @@
   const __COLOCATED_TEMPLATE__ = Ember.HTMLBars.template(
   /*
     
-  <NrgButton @class="move-over" @action={{this.toggleShowHello}}> 
+  <NrgButton @class="move-over" @action={{this.toggleShowAnswer}}> 
     <AnimatedContainer>
-        {{#animated-if this.showHello rules=this.rules}}
+        {{#animated-if this.showAnswer rules=this.rules}}
           <div class="answer">
             {{@answer}}
           </div>
@@ -2312,8 +2312,8 @@
   {{yield}}
   */
   {
-    "id": "4xGDIUuF",
-    "block": "{\"symbols\":[\"@question\",\"@answer\",\"&default\"],\"statements\":[[2,\"\\n\"],[8,\"nrg-button\",[],[[\"@class\",\"@action\"],[\"move-over\",[32,0,[\"toggleShowHello\"]]]],[[\"default\"],[{\"statements\":[[2,\" \\n  \"],[8,\"animated-container\",[],[[],[]],[[\"default\"],[{\"statements\":[[2,\"\\n\"],[6,[37,0],[[32,0,[\"showHello\"]]],[[\"rules\"],[[32,0,[\"rules\"]]]],[[\"default\",\"else\"],[{\"statements\":[[2,\"        \"],[10,\"div\"],[14,0,\"answer\"],[12],[2,\"\\n          \"],[1,[32,2]],[2,\"\\n        \"],[13],[2,\"\\n\"]],\"parameters\":[]},{\"statements\":[[2,\"        \"],[10,\"div\"],[14,0,\"question\"],[12],[2,\"\\n          \"],[1,[32,1]],[2,\"\\n        \"],[13],[2,\"\\n\"]],\"parameters\":[]}]]],[2,\"    \"]],\"parameters\":[]}]]],[2,\"\\n\"]],\"parameters\":[]}]]],[2,\"\\n\\n\"],[18,3,null]],\"hasEval\":false,\"upvars\":[\"animated-if\"]}",
+    "id": "2e8i2uK1",
+    "block": "{\"symbols\":[\"@question\",\"@answer\",\"&default\"],\"statements\":[[2,\"\\n\"],[8,\"nrg-button\",[],[[\"@class\",\"@action\"],[\"move-over\",[32,0,[\"toggleShowAnswer\"]]]],[[\"default\"],[{\"statements\":[[2,\" \\n  \"],[8,\"animated-container\",[],[[],[]],[[\"default\"],[{\"statements\":[[2,\"\\n\"],[6,[37,0],[[32,0,[\"showAnswer\"]]],[[\"rules\"],[[32,0,[\"rules\"]]]],[[\"default\",\"else\"],[{\"statements\":[[2,\"        \"],[10,\"div\"],[14,0,\"answer\"],[12],[2,\"\\n          \"],[1,[32,2]],[2,\"\\n        \"],[13],[2,\"\\n\"]],\"parameters\":[]},{\"statements\":[[2,\"        \"],[10,\"div\"],[14,0,\"question\"],[12],[2,\"\\n          \"],[1,[32,1]],[2,\"\\n        \"],[13],[2,\"\\n\"]],\"parameters\":[]}]]],[2,\"    \"]],\"parameters\":[]}]]],[2,\"\\n\"]],\"parameters\":[]}]]],[2,\"\\n\\n\"],[18,3,null]],\"hasEval\":false,\"upvars\":[\"animated-if\"]}",
     "meta": {
       "moduleName": "animate-accounting-web/components/scenario-success-button.hbs"
     }
@@ -2322,11 +2322,11 @@
   let ScenarioSuccessButton = (_dec = Ember._tracked, _dec2 = Ember._action, (_class = class ScenarioSuccessButton extends _component.default {
     constructor() {
       super(...arguments);
-      (0, _initializerDefineProperty2.default)(this, "showHello", _descriptor, this);
+      (0, _initializerDefineProperty2.default)(this, "showAnswer", _descriptor, this);
     }
 
-    toggleShowHello() {
-      this.showHello = !this.showHello;
+    toggleShowAnswer() {
+      this.showAnswer = !this.showAnswer;
     }
 
     rules(_ref2) {
@@ -2341,14 +2341,14 @@
       }
     }
 
-  }, (_descriptor = (0, _applyDecoratedDescriptor2.default)(_class.prototype, "showHello", [_dec], {
+  }, (_descriptor = (0, _applyDecoratedDescriptor2.default)(_class.prototype, "showAnswer", [_dec], {
     configurable: true,
     enumerable: true,
     writable: true,
     initializer: function () {
       return false;
     }
-  }), (0, _applyDecoratedDescriptor2.default)(_class.prototype, "toggleShowHello", [_dec2], Object.getOwnPropertyDescriptor(_class.prototype, "toggleShowHello"), _class.prototype)), _class));
+  }), (0, _applyDecoratedDescriptor2.default)(_class.prototype, "toggleShowAnswer", [_dec2], Object.getOwnPropertyDescriptor(_class.prototype, "toggleShowAnswer"), _class.prototype)), _class));
   _exports.default = ScenarioSuccessButton;
 
   Ember._setComponentTemplate(__COLOCATED_TEMPLATE__, ScenarioSuccessButton);
@@ -6075,7 +6075,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("animate-accounting-web/app")["default"].create({"name":"animate-accounting-web","version":"0.0.0+3eaf0e00"});
+            require("animate-accounting-web/app")["default"].create({"name":"animate-accounting-web","version":"0.0.0+bdbb06ed"});
           }
         
 //# sourceMappingURL=animate-accounting-web.map

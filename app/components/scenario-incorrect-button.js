@@ -4,10 +4,10 @@ import { action } from '@ember/object';
 import { toDown, toUp } from 'ember-animated/transitions/move-over';
 
 export default class ScenarioIncorrectButton extends Component {
-  @tracked showHello = false;
+  @tracked showIncorrectAnswer = false;
 
-  @action toggleShowHello() {
-    this.showHello = !this.showHello;
+  @action toggleShowIncorrectAnswer() {
+    this.showIncorrectAnswer = !this.showIncorrectAnswer;
   }
 
   rules({ newItems }) {

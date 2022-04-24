@@ -1,7 +1,7 @@
 
-<NrgButton @class="move-over" @action={{this.toggleShowHello}}> 
+<NrgButton @class="move-over" @action={{this.toggleShowIncorrectAnswer}}> 
   <AnimatedContainer>
-      {{#animated-if this.showHello rules=this.rules}}
+      {{#animated-if this.showIncorrectAnswer rules=this.rules}}
         <div class="incorrect-answer">
           {{@answer}}
         </div>

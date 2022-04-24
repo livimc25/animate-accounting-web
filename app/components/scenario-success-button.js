@@ -4,10 +4,10 @@ import { action } from '@ember/object';
 import { toUp, toDown } from 'ember-animated/transitions/move-over';
 
 export default class ScenarioSuccessButton extends Component {
-  @tracked showHello = false;
+  @tracked showAnswer = false;
 
-  @action toggleShowHello() {
-    this.showHello = !this.showHello;
+  @action toggleShowAnswer() {
+    this.showAnswer = !this.showAnswer;
   }
 
   rules({ newItems }) {
