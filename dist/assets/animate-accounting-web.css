@@ -14263,7 +14263,7 @@ h1, .h1 {
   left: 0px;
   text-align: center;
   color: white;
-  font-size: large;
+  font-size: x-large;
 }
 
 .ready-to-begin {
@@ -14320,6 +14320,7 @@ h1, .h1 {
   background-color: #4F4A41;
   border-color: #302e2c;
   padding: 15px 30px;
+  font-size: 1.5em;
 }
 
 .what-btn-location {
@@ -14361,28 +14362,32 @@ h1, .h1 {
   width: 420px;
   height: 315px;
   position: absolute;
-  left: 50%;
+  left: 54%;
   top: 40%;
   margin-top: 3%;
 }
 
 .box {
-  width: 80vh;
-  height: 60vh;
-  margin: auto;
   position: relative;
-  display: block;
+  top: 30%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 60vh;
 }
 
 .dialog-1 {
-  height: 260px;
-  width: 240px;
+  height: 350px;
+  width: 275px;
   background-color: var(--main-light-color);
   position: absolute;
   top: 15%;
+  left: 30%;
   border-radius: 10%;
   text-align: center;
   padding: 15px;
+  font-size: large;
 }
 
 .left-point {
@@ -14390,7 +14395,7 @@ h1, .h1 {
   height: 0;
   border-left: 2vh solid transparent;
   border-right: 2vh solid transparent;
-  border-top: 10vh solid var(--main-light-color);
+  border-top: 5vh solid var(--main-light-color);
   position: absolute;
   top: 43%;
   left: -10%;
@@ -14398,15 +14403,16 @@ h1, .h1 {
 }
 
 .dialog-2 {
-  height: 260px;
-  width: 245px;
+  height: 375px;
+  width: 275px;
   background-color: var(--main-light-color);
   position: absolute;
   top: 30%;
+  right: 30%;
   border-radius: 10%;
-  right: 0;
   text-align: center;
   padding: 15px;
+  font-size: large;
 }
 
 .right-point {
@@ -14414,7 +14420,7 @@ h1, .h1 {
   height: 0;
   border-left: 2vh solid transparent;
   border-right: 2vh solid transparent;
-  border-top: 10vh solid var(--main-light-color);
+  border-top: 5vh solid var(--main-light-color);
   position: absolute;
   top: 7%;
   right: -10%;
@@ -14474,6 +14480,7 @@ h1, .h1 {
   margin-left: 10%;
   margin-top: 5%;
   margin-bottom: 5%;
+  font-size: 3em;
 }
 
 .dropTarget {
@@ -14491,15 +14498,15 @@ h1, .h1 {
 }
 
 .sort-new-object {
-  width: 310px;
-  height: 80px;
+  width: 400px;
+  height: 85px;
   background-color: #302e2c;
   line-height: 50px;
   text-align: center;
-  font-size: 16px;
   margin-top: 10px;
   padding: 1em;
   color: #fff;
+  font-size: 1.5em;
 }
 
 .income-statement-sort-objects {
@@ -14520,7 +14527,7 @@ h1, .h1 {
   margin-left: 10%;
   margin-right: 10%;
   color: white;
-  font-size: large;
+  font-size: 2em;
 }
 
 .income-statement-paragraph-2 {
@@ -14528,7 +14535,7 @@ h1, .h1 {
   margin-left: 10%;
   margin-right: 10%;
   color: white;
-  font-size: large;
+  font-size: 1.5em;
 }
 
 .sortObject {
@@ -14538,7 +14545,7 @@ h1, .h1 {
   background-color: #88BDBC;
   line-height: 20px;
   text-align: center;
-  font-size: 16px;
+  font-size: 1.5em;
   padding: 1em;
   color: #254E58;
   display: flex;
@@ -14559,7 +14566,7 @@ h1, .h1 {
 
 .accounting-equation-game {
   position: absolute;
-  top: 70%;
+  margin-top: 8%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -14634,7 +14641,7 @@ h1, .h1 {
 
 #revenue-recognition-body .revenue-picture-overlay {
   background-color: rgba(17, 45, 50, 0.83);
-  height: 100%;
+  height: 140%;
 }
 
 #income-statement-body {
@@ -14673,7 +14680,7 @@ h1, .h1 {
 
 #why-learn-body .why-picture-overlay {
   background-color: rgba(136, 189, 188, 0.83);
-  height: 100%;
+  height: 120%;
 }
 
 #what-is-accounting-body {
@@ -14737,10 +14744,12 @@ h1, .h1 {
   padding: 2em !important;
   margin-left: 2% !important;
   font-family: Georgia, "Times New Roman", Times, serif !important;
+  font-size: 1.5em !important;
 }
 
 .scenario-buttons-location {
-  margin-top: 3%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -14748,19 +14757,19 @@ h1, .h1 {
 
 .seymour-photo {
   position: absolute;
-  top: 50%;
+  top: 33%;
   left: 18%;
   border: 1px solid black;
-  height: 25%;
+  height: 40%;
   border-radius: 50%;
 }
 
 .seth-photo {
   position: absolute;
-  top: 47%;
-  left: 73%;
+  top: 20%;
+  right: 14%;
   border: 1px solid black;
-  height: 25%;
+  height: 40%;
   border-radius: 50%;
 }
 
